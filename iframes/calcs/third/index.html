@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="convertercopy.css" />
+    <script src="convertercopy.js"></script>
+</head>
+
+<body>
+
+    <header class="col-12 center-items">
+        <h1>Converter</h1>
+        <h3>przeliczaj jednostki</h3>
+    </header>
+
+    <div class="row-12 positioner center-item" id="branches">
+        <div class="row-4 center-items ok branch" id="nowy">
+            nowy
+        </div>
+    </div>
+
+    <div class="col-12 positioner center-items" id="hidden">
+
+        <p class="row-10 row-s-3 titlebar" ;>
+            Dodaj nowy typ wartości.
+        </p>
+
+        <p class="row-10 row-s-3 follow">
+            Potrzebny ci rodzaj danych (np. powierzchnia, waluta):
+        </p>
+        <input type="text" class="row-10 row-s-3 new-inputs" id="hidden_input" placeholder="podaj nazwę">
+
+        <p class="row-10 row-s-3 follow">
+            Twoja intuicyjna jednostka (np. metr kw., złoty):
+        </p>
+        <input type="text" class="row-10 row-s-3 new-inputs" id="hidden_input-B" placeholder="podaj nazwę">
+
+        <div style="height: 1rem;"></div>
+        <div class="row-10 row-s-3 ok" id="hidden_ok">OK</div>
+        <div style="height: 1rem;"></div>
+        <div class="row-10 row-s-3" id="newbtnalert"></div>
+    </div>
+
+    <div class="col-12" id="main">
+        <div class="row-12 positioner center-items">
+            <div class="row-11 row-s-6" id="actualid"></div>
+        </div>
+        <div class="row-12 positioner center-items">
+
+            <input type="number" class="row-5 row-s-4" id="input" placeholder="Tu można pisać" step="0.01">
+
+            <div class="select-box row-6 row-s-2" id="sel-box-A">
+
+                <p id="for">na</p>
+
+                <!-- empty -->
+                <div class="row-1 row-s-0"></div>
+            </div>
+
+        </div>
+
+        <div class="row-12 positioner center-items">
+            <div class="row-11 row-s-6 ok hasactive" id="ok">
+                OK
+            </div>
+        </div>
+
+        <div class="row-12 positioner center-items">
+            <div class="row-11 row-s-6 ok" id="output">
+                Tu będzie wynik...
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 center-items positioner" id="below">
+
+
+        <div class="row-11 row-s-6 titlebar">
+            <p>brak potrzebnej miary? dodaj jej nazwę i przelicznik na znaną ci jednostkę:</p>
+        </div>
+
+
+        <div class="col-11 col-s-6 inner-addbar">
+
+            <div class="row-12 label-box">
+                <p class="follow l row-2">Jeden</p>
+                <input type="text" class="new-inputs row-8" id="newvalue" placeholder="np. dolar, metr...">
+            </div>
+
+            <div class="row-12 label-box">
+                <p class="follow l row-2">to</p>
+                <input type="number" class="new-inputs row-8" id="newcount" placeholder="ile...?">
+            </div>
+
+            <div class="row-12 label-box" id="sel-box-B">
+                <p class="follow l row-2">jednostek:</p>
+
+
+            </div>
+
+            <div class="row-12" style="height:0.5rem;"></div>
+
+            <div class="row-12">
+                <div class="row-2" style="margin:1rem;"></div>
+                <div class="row-8 center-items ok" id="okB">
+                    ok
+                </div>
+            </div>
+
+            <div class="row-12">
+                <div class="row-2" style="margin:1rem;"></div>
+                <div class="row-8" id="newoptalert">
+                    ok
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

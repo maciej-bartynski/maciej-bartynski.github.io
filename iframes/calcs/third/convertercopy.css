@@ -1,0 +1,199 @@
+
+header {
+  align-items: center;
+  justify-content: center;
+  color: rgba(54, 0, 68, 1);
+  text-shadow: 1px 1px 3px rgb(100, 100, 100);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+header h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+#actualid{
+  color:white;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.clicked {
+  border: solid 2px rgb(168, 150, 184);;
+}
+
+.positioner {
+  background-color: rgba(54, 0, 68, 1);
+  flex-wrap: wrap;
+  padding: 1rem 0 1rem 0;
+}
+
+.center-items {
+  align-items: center;
+  justify-content: center;
+}
+
+/*główna sekcja konwertera*/
+.select-box,
+.label-box {
+  height: 2rem;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+}
+
+.select-box {
+  background-color: rgb(133, 3, 165);
+}
+
+#sel-box-A{
+  justify-content: space-around;
+}
+
+#sel-box-B{
+  justify-content: flex-start;
+}
+
+#output {
+  color: rgba(54, 0, 68, 1);
+  background-color: rgb(243, 194, 255);
+  letter-spacing: 0.1rem;
+  cursor: auto;
+  user-select: auto;
+  -webkit-touch-callout: unset;
+  -webkit-user-select: auto;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+.inner-addbar {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/*inputs*/
+input {
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: solid 1px white;
+  background-color: rgb(243, 194, 255);
+  padding-left: 1rem;
+}
+
+#input {
+  border-radius: 5px 0 0 5px;
+}
+
+input:focus,
+#input:focus {
+  background-color: rgba(3, 165, 103, 0.2);
+  color: white;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(150, 150, 150);
+  opacity: 1; /* Firefox */
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(150, 150, 150);
+  font-style: italic;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(150, 150, 150);
+  font-style: italic;
+}
+
+/*przyciski ok*/
+.ok {
+  height: 2rem;
+  border-radius: 5px;
+  background-color: rgb(133, 3, 165);
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.95);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.95);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.95);
+}
+
+.ok:hover {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background-color: rgb(255, 138, 138);
+}
+
+.ok:active {
+  background-color: rgb(139, 58, 58);
+}
+
+#okB {
+  display: flex;
+  padding: 0 3rem 0 3rem;
+}
+/*teksty i opisy*/
+.titlebar {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+
+.follow {
+  color: white;
+  margin: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.l {
+  justify-content: flex-end;
+}
+
+/*Alerty:*/
+.board {
+  display: flex;
+  height: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.red-alert {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+}
+
+.green-alert {
+  background-color: rgba(0, 255, 0, 0.5);
+  color: white;
+}
+
+/*safari layout*/
+.flexbox{
+  display: flex;
+}
+
+.none{
+  display: none;
+}

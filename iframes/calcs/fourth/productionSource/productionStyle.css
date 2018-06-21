@@ -1,0 +1,375 @@
+body {
+  margin: 0 0 0 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: #6b8bf3;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #6b8bf3;
+  flex-wrap: wrap;
+}
+
+nav div {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #686f88;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (min-width: 768px) {
+  nav div {
+    width: 30%;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+nav .selected {
+  background-color: #90a8f7;
+}
+
+@media only screen and (max-width: 768px) {
+  nav .selected {
+    order: 3;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.branches {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  flex-wrap: wrap;
+}
+
+.branches div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #688a62;
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem;
+  width: 90%;
+  white-space: nowrap;
+  margin: 1px;
+  user-select: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .branches div {
+    width: auto;
+  }
+}
+
+.branches div:hover {
+  background-color: #54659e;
+}
+
+.branches div:active {
+  background-color: #ccffcb;
+}
+
+.branches .brnch-selected {
+  background-color: #54659e;
+}
+
+section {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #90a8f7;
+}
+
+section h2,
+section h3 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1;
+  color: #303030;
+  text-shadow: 1px, 1px, 1px;
+  color: white;
+}
+
+section p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  section p {
+    width: 30%;
+  }
+}
+
+section .alert,
+section .board {
+  margin-top: 1rem;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  section .alert,
+  section .board {
+    width: 50%;
+  }
+}
+
+section .alert label,
+section .board label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: #688a62;
+  color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  section .alert label,
+  section .board label {
+    width: 60%;
+  }
+}
+
+section .alert label input,
+section .alert label select,
+section .alert label span,
+section .board label input,
+section .board label select,
+section .board label span {
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border: none;
+}
+
+section .alert label input,
+section .alert label select,
+section .board label input,
+section .board label select {
+  background-color: #ccffcb;
+}
+
+section div.label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: #54659e;
+}
+
+@media only screen and (min-width: 768px) {
+  section div.label {
+    width: 30%;
+  }
+}
+
+section div.label #openFormulaToAddNewUnit {
+  padding: 1rem;
+  margin: 0;
+  white-space: nowrap;
+  width: auto;
+}
+
+section div.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 0.6rem;
+  background-color: #54659e;
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (min-width: 768px) {
+  section div.btn {
+    width: 60%;
+  }
+}
+
+section .back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 1rem;
+  white-space: nowrap;
+  background-color: #54659e;
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (min-width: 768px) {
+  section .back {
+    width: auto;
+  }
+}
+
+section div.btn:hover,
+section .back:hover {
+  background-color: #688a62;
+}
+
+section div.btn:active,
+section .back:active {
+  background-color: #ccffcb;
+}
+
+section:nth-of-type(2) .hide-show-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-of-type(2) .output {
+  border: solid 1px #54659e;
+  color: #54659e;
+  background: none;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  section:nth-of-type(2) .output {
+    width: 30%;
+  }
+}
+
+.red-alert {
+  background-color: #f84242;
+}
+
+.alert_p {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.green-alert {
+  background-color: #00a336;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.displayNone {
+  display: none;
+}
+
+.rolltop {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #6b8bf3;
+  color: white;
+  letter-spacing: 0.1rem;
+}

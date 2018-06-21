@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(54, 0, 68, 1);
+  font-size: 0.5rem;
+  text-shadow: 1px 1px 3px rgb(100, 100, 100);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+header h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.positioner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(54, 0, 68, 1);
+}
+
+.top {
+  padding-top: 10px;
+}
+
+.bottom {
+  padding: 10px;
+}
+
+.wid1 {
+  width: 10%;
+}
+
+.left {
+  width: 10%;
+  height: 30px;
+  border-radius: 5px 5px;
+  background-color: red;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.6rem;
+}
+
+.accept {
+  width: 10%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgba(0, 128, 0, 0.8);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.6rem;
+}
+
+.outp {
+  width: 300px;
+  height: 30px;
+  border: solid 1px white;
+  border-radius: 5px 5px 5px 5px;
+  background-color: rgb(243, 194, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(39, 39, 39);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.degree {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  background-color: rgb(204, 0, 255);
+  color: rgb(246, 209, 255);
+  text-align: center;
+}
+
+.button {
+  
+  height: 50px;
+  width: 150px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(150, 0, 105);
+  color: rgb(206, 206, 206);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+}
+
+.button:hover {
+  background-color:rgb(204, 0, 255);
+  color: rgb(255, 255, 255);
+  border-top: none;
+}
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(241, 198, 252);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(241, 198, 252);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(241, 198, 252);
+}

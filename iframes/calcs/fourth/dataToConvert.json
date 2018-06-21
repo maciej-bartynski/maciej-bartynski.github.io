@@ -1,0 +1,34 @@
+{
+    "odleglosc": {
+        "metr": ["basic", 1, 1],
+        "kilometr": ["metr", 1000, 1],
+        "kilometr kw": ["metr kw", 1000000, 2],
+        "kilometr sz": ["metr sz", 1000000000, 3],
+        "centymetr": ["metr", 0.01, 1],
+        "centymetr kw": ["metr kw", 0.0001, 2],
+        "centymetr sz": ["metr sz", 0.000001, 3],
+        "decymetr": ["centymetr", 10, 1],
+        "decymetr kw": ["centymetr kw", 100, 2],
+        "decymetr sz": ["centymetr sz", 1000, 3],
+        "ar": ["metr kw", 100, 2],
+        "hektar": ["metr kw", 10000, 2],
+        "litr": ["decymetr sz", 1, 3],
+        "hektolitr": ["litr", 100, 3]
+    },
+    "waluta": {
+        "zloty": ["basic", 1, 0],
+        "dolar": ["zloty", 3, 0],
+        "euro": ["zloty", 4, 0],
+        "frank": ["dolar", 2, 0]
+    },
+    "obszar": {
+        "ar": ["basic", 1, 0],
+        "hektar": ["ar", 100, 0],
+        "morga": ["hektar", 0.5, 0]
+    },
+    "objetosc": {
+        "beczka": ["basic", 1, 0],
+        "butla": ["beczka", 0.3, 0],
+        "kanka": ["butla", 2.5, 0]
+    }
+}

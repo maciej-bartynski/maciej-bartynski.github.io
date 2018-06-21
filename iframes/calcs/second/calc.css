@@ -1,0 +1,198 @@
+header {
+  align-items: center;
+  justify-content: center;
+  color: rgba(54, 0, 68, 1);
+  text-shadow: 1px 1px 3px rgb(100, 100, 100);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+header h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.positioner {
+  background-color: rgba(54, 0, 68, 1);
+  flex-wrap: wrap;
+}
+
+.center-items {
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  padding-top: 2rem;
+}
+
+.mid {
+  padding: 1rem 0 1rem 0;
+}
+
+.bottom {
+  padding-bottom: 2rem;
+}
+
+#input {
+  height: 2rem;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  border: solid 1px white;
+  background-color: rgb(243, 194, 255);
+}
+
+.select-box {
+  height: 2rem;
+  background-color: rgb(133, 3, 165);
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+}
+
+#ok {
+  height: 2rem;
+  border-radius: 5px;
+  background-color: rgb(133, 3, 165);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.95);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.95);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.95);
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  cursor: pointer;
+}
+
+#ok:hover {
+  background-color: rgb(255, 138, 138);
+}
+
+#ok:active {
+  background-color: rgb(139, 58, 58);
+}
+
+#output {
+  height: 2rem;
+  border: solid 1px white;
+  background-color: rgb(243, 194, 255);
+  color: rgba(54, 0, 68, 1);
+  border-radius: 5px 5px 5px 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(107, 67, 117);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(107, 67, 117);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(107, 67, 117);
+}
+
+.titlebar {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+
+.addbar {
+  padding: 0 0 1rem 0;
+}
+
+.inner-addbar {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container {
+  padding-left: 2.8%;
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.new-inputs {
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: solid 1px white;
+  background-color: rgb(243, 194, 255);
+}
+
+#ok2 {
+  height: 2rem;
+  border-radius: 5px;
+  background-color: rgb(133, 3, 165);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.95);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.95);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.95);
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#ok2:hover {
+  background-color: rgb(255, 138, 138);
+}
+
+#ok2:active {
+  background-color: rgb(139, 58, 58);
+}
+
+.alert {
+  display: none;
+  height: 2rem;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  text-align: center;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#green {
+  background-color: rgba(3, 165, 116, 0.7);
+}
+
+#red {
+  background-color: rgba(165, 3, 30, 0.7);
+}

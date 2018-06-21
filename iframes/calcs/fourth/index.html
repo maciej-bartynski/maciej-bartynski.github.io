@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Converter-app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="productionSource/productionStyle.css" />
+    <script src="productionSource/interfaceEngine.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Konwerter</h1>
+    </header>
+
+    <nav>
+        <div>
+            <span>Konwerter</span>
+        </div>
+        <div>
+            <span>Dodaj system miar</span>
+        </div>
+        <div>
+            <span>Pobierz gotowe systemy miar</span>
+        </div>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>Dodaj system jednostek</h2>
+
+            <div class="alert">
+                <label>
+                    <span>Nazwa systemu miar:</span>
+                    <input type="text" placeholder="np. dlugosc" name="unitsys"/>
+                </label>
+            </div>
+
+            <div class="alert">
+                <label>
+                    <span>Podstawowa jednostka:</span>
+                    <input type="text" placeholder="np. kilometr" name="basicunit"/>
+                </label>
+            </div>
+
+            <div class="alert">
+                <label>
+                    <span>Podana jednostka jest:</span>
+                    <select>
+                        <option value="0">liniowa</option>
+                        <option value="1">odległością</option>
+                    </select>
+                </label>
+            </div>
+            <div class="board">
+                <div class='btn'>Zatwierdź</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Konwertuj jednostki</h2>
+            <div class='branches'>
+                <!--<div>Długość</div>
+                <div>Sys. metryczny</div>
+                <div>Waluta</div>-->
+            </div>
+            <div class="hide-show-area">
+                <div class="alert">
+                    <label>
+                        <span>Ilość jednostki przeliczanej:</span>
+                        <input type="number" placeholder="tylko cyfry, kropka i znak '-'" name='num'>
+                    </label>
+                </div>
+
+                <div class="alert">
+                    <label>
+                        <span>nazwa jednostki przeliczanej:</span>
+                        <select>
+                            <option>metr</option>
+                            <option>kilometr</option>
+                            <option>mila</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="alert">
+                    <label>
+                        <span>jednostka wynikowa:</span>
+                        <select>
+                            <option>metr</option>
+                            <option>kilometr</option>
+                            <option>mila</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="board">
+                    <div class='btn'>Przelicz</div>
+                </div>
+                <div class='output'>X jednostelk brak/kwadrat/szescian to X jednostek brak/kwadrat/szescian</div>
+
+                <div class="label">
+                    <span>Brak potrzebnej jednostki w tym systemie?</span>
+                    <div class='btn' id="openFormulaToAddNewUnit">Dodaj ją</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="back">Wróć do konwertera</div>
+            <h3>Dodaj nową jednostkę do tego systemu miar:</h3>
+
+            <div class="alert">
+                <label>
+                    <span>Nazwa nowej jednostki:</span>
+                    <input type="text" placeholder="np. metr">
+                </label>
+            </div>
+
+            <div class="alert">
+                <label>
+                    <span>Jednostka wynosi tyle:</span>
+                    <input type="number" placeholder="tylko cyfry, kropka i znak '-'" name='numofrefer'>
+                </label>
+            </div>
+
+            <div class="alert">
+                <label>
+                    <span>tych jednostek odniesienia:</span>
+                    <select>
+                        <option>kilometr</option>
+                        <option>mila</option>
+                        <option>jard</option>
+                    </select>
+                </label>
+            </div>
+            <div class="board">
+                <div class='btn' id='closeFormula'>Dodaj jednostkę</div>
+            </div>
+        </section>
+
+        <section>
+            <p>OK - to tylko pokaz. Dane przechowuję w pliku JSON, w tym samym folderze w którym znajduje się index. Zapytanie
+                ("GET") pobierze te dane i doda do kalkulatora. Po użyciu poniższego przycisku, sprawdź zakładkę "konwertuj",
+                gdzie pojawią się nowe przyciski.
+            </p>
+            <div class="board">
+                <div class="btn">Ajax Request</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Witaj w konwerterze jednostek</h2>
+            <p>
+                Za pomocą zakładki "konwertuj" (u góry), możesz przeliczać jednostki. Najpierw jednak musisz dodać minimum jeden systemy
+                miar ("dodaj system") lub pobrać gotową listę systemów, jednostek i przeliczników z bazy danych ("pobierz
+                systemy").
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        Designed and constructed by Maciej Bartyński
+    </footer>
+
+</body>
+
+</html>

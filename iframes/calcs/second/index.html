@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CashCalc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="calc.css" />
+    <script src="cashcalc.js"></script>
+</head>
+
+<body>
+
+    <header class="col-12 center-items">
+        <h1>CashCalc</h1>
+        <h3>przeliczaj waluty</h3>
+    </header>
+
+    <div class="row-12 positioner center-items top">
+
+        <input type="number" class="row-5 row-s-4" id="input" placeholder="Tu można pisać" step="0.01" autofocus>
+
+        <div class="select-box row-6 row-s-2">
+
+            <select id="select1">
+                <option value="złoty">złoty</option>
+                <option value="dolar">dolar</option>
+                <option value="euro">euro</option>
+                <option value="frank">frank</option>
+
+            </select>
+
+            na
+
+            <select id="select2">
+                <option value="złoty">złoty</option>
+                <option value="dolar">dolar</option>
+                <option value="euro">euro</option>
+                <option value="frank">frank</option>
+            </select>
+
+            <!-- empty -->
+            <div class="row-1 row-s-0"></div>
+        </div>
+
+    </div>
+
+    <div class="row-12 positioner center-items mid">
+        <div class="row-11 row-s-6" id="ok">
+            OK
+        </div>
+    </div>
+
+    <div class="row-12 positioner center-items bottom">
+        <div class="row-11 row-s-6" id="output">
+            Tu będzie wynik...
+        </div>
+    </div>
+
+    <div class="row-12 positioner center-items">
+        <div class="row-11 row-s-6 titlebar">
+            <p>brak potrzebnej waluty?
+                <br>dodaj do cashcalca jej nazwę i wartość w złotówkach:</p>
+        </div>
+    </div>
+
+    <div class="row-12 positioner center-items addbar">
+
+        <div class="row-11 row-s-6 inner-addbar">
+
+            <div class="row-6 row-s-3 no-1">
+                <input type="text" class="new-inputs row-12" id="newvalue" placeholder="np. dolar">
+            </div>
+
+            <div class="row-6 row-s-4 no-2 container">
+                <input type="number" class="new-inputs row-12" id="newcount" placeholder="ile to PLN?">
+            </div>
+
+            <div class="row-12 row-s-7 no-4 margin-top">
+                <div class="row-12 center-items" id="ok2">
+                    ok
+                </div>
+            </div>
+
+            <div id="green" class="wid-12 wid-s-7 center-items alert no-3 margin-top">
+            </div>
+
+            <div id="red" class="wid-12 wid-s-7 center-items alert no-3 margin-top">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
