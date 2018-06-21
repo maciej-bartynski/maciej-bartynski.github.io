@@ -29,7 +29,7 @@ import './footer/footer.scss';
 document.addEventListener('DOMContentLoaded', setPositionOnPage);
 
 function setPositionOnPage() {
-    setTimeout(function () {
+    function goToTop() {
         var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
         if (isSmoothScrollSupported === true) {
             window.scrollTo({
@@ -40,5 +40,6 @@ function setPositionOnPage() {
         } else {
             window.scrollTo(0, 0);
         }
-    }, 600)
+    }
+    setTimeout(goToTop,500);
 }
