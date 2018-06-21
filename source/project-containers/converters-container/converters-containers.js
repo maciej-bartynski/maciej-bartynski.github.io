@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 document.addEventListener('DOMContentLoaded', enableActiveLinksToConverters);
 function enableActiveLinksToConverters(){
     let converterPositioners=document.querySelectorAll('.project-container.converters .project-container_positioner');
@@ -10,4 +10,4 @@ function enableActiveLinksToConverters(){
             window.open(link);
         })
     }
-}
+}*/
