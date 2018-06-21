@@ -91,7 +91,7 @@ function scrollToReco(){
     } 
 }
 function openGithub(){
-    window.open('https://www.linkedin.com/in/maciej-bartynski/');
+    window.open('https://github.com/maciej-bartynski');
 }
 function openLinkedIn(){
     window.open('https://www.linkedin.com/in/maciej-bartynski/');
