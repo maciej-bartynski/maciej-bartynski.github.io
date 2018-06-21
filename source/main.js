@@ -25,21 +25,3 @@ import './project-containers/cvPlusPlus-container/cvPlusPlus-container.js';
 import './recomendations-container/recomendations.scss';
 //footer
 import './footer/footer.scss';
-'use strict';
-document.addEventListener('DOMContentLoaded', setPositionOnPage);
-
-function setPositionOnPage() {
-    function goToTop() {
-        var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
-        if (isSmoothScrollSupported === true) {
-            window.scrollTo({
-                'behavior': 'smooth',
-                'left': 0,
-                'top': 0
-            });
-        } else {
-            window.scrollTo(0, 0);
-        }
-    }
-    setTimeout(goToTop,501);
-}

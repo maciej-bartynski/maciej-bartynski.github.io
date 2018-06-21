@@ -1,6 +1,7 @@
 .left-column header {
     @include column ($fstart, $center);
     width: 100%; 
+    min-height: 200px;
     padding: 1rem 0 1rem 0;
     img#maciej-bartynski-portrait {
         width: 180px;
