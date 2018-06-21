@@ -41,5 +41,5 @@ function setPositionOnPage() {
             window.scrollTo(0, 0);
         }
     }
-    setTimeout(goToTop,500);
+    setTimeout(goToTop,100);
 }
