@@ -1,0 +1,76 @@
+.project-container {
+    margin: 50px auto;
+    width: 210mm;
+    padding: 0.5rem;
+    @include column($fstart, $fstart);
+    @include shadow();
+    @media only screen and (max-width: 220mm){
+        width:100%;
+    }
+    header {
+        width: 100%;
+        @include column($fstart, $fstart);
+        .project-container_head_type{
+            @include row($fstart, $center);
+            padding: 0 0 0.5rem 0;
+            svg {
+                width: 30px;
+                height: 30px;
+                margin: 0 1rem 0 0;
+            }
+            h2 {
+                text-transform: capitalize;
+                font-family: sans-serif;
+                font-weight: 400;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .project-container_head_title{
+            width: 100%;
+            margin: 0 0 0.5rem 0;
+            padding: 0;
+            text-align: left;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+        }
+        .project-container_head_about{
+            width: 100%;
+            padding: 0 0 0.5rem 0;
+            text-align: left;
+            text-transform: none;
+            font-family: sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+        }
+    }
+    main {
+        width: 100%;
+        @include row($center, $center);
+        .project-container_positioner{
+            width: 20%;
+            height: 200px;
+            margin: 0.5rem;
+        }
+    }
+}
+
+.container-for-two-project-containers {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 210mm;
+    @include row($sbetween, $sbetween);
+    flex-wrap: wrap;
+    @media only screen and (max-width: 220mm){
+        width:100%;
+    } 
+    .project-container.magic-text, .project-container.photo-fade{
+        width: 47%;
+        margin: 0 0 50px 0;
+        @media only screen and (max-width: 220mm){
+            width:100%;
+        } 
+    }
+}

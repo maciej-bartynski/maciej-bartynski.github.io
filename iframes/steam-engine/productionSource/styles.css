@@ -1,0 +1,1173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#sectionToolsAndMaterials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media only screen and (min-width: 992px) {
+  #sectionToolsAndMaterials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+#sectionToolsAndMaterials div.section_left-side {
+  background-color: #ffd390;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  #sectionToolsAndMaterials div.section_left-side {
+    background-color: #ffd390;
+    width: 20%;
+  }
+}
+
+#sectionToolsAndMaterials div.section_right-side {
+  background-color: #ffe3b9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media only screen and (min-width: 992px) {
+  #sectionToolsAndMaterials div.section_right-side {
+    background-color: #ffe3b9;
+    width: 80%;
+  }
+}
+
+div.functionalRowOfTools {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+}
+
+@media only screen and (max-width: 767px) {
+  div.functionalRowOfTools {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
+div.functionalRowOfTools .verticalPowerLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 57px;
+  width: 4px;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  div.functionalRowOfTools .verticalPowerLine {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+div.functionalRowOfTools .verticalPowerLine.ffirst {
+  align-self: flex-start;
+}
+
+div.functionalRowOfTools .verticalPowerLine.fsecond {
+  align-self: flex-end;
+}
+
+div.functionalRowOfTools .verticalPowerLine .vp {
+  background-color: #ff5100;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+div.functionalRowOfTools .verticalPowerLine .vp.vpturnon {
+  animation: vpowerline linear 100ms;
+  animation-fill-mode: forwards;
+}
+
+div.functionalRowOfTools .horizontalPowerLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  div.functionalRowOfTools .horizontalPowerLine {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+div.functionalRowOfTools .horizontalPowerLine .hp {
+  background-color: #ff5100;
+  height: 4px;
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+div.functionalRowOfTools .horizontalPowerLine .hp.hpturnon {
+  animation: hpowerline linear 100ms;
+  animation-fill-mode: forwards;
+}
+
+div.functionalRowOfTools:nth-of-type(odd) .horizontalPowerLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+div.classBelt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+div.classBelt:hover {
+  background-color: rgba(0, 102, 255, 0.7);
+}
+
+div.classBelt div.classSVGContainer {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+div.classBelt div.classToolName {
+  width: 240px;
+  height: 70px;
+  border: 4px #ffd390 solid;
+  border-radius: 6px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.3;
+}
+
+div.classBelt div.classToolName.bturnon {
+  animation: bordersTurnOn linear 500ms;
+  animation-fill-mode: forwards;
+}
+
+div.classBelt div.classToolName span.classToolNameSpan {
+  color: #ff5100;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-align: right;
+  width: 90%;
+}
+
+.toolSVG {
+  width: 100px;
+  height: 100px;
+  background-color: #ffe3b9;
+  border-radius: 100px;
+  border: 2px #ffd390 solid;
+  opacity: 0.3;
+}
+
+.toolSVG.bturnon {
+  animation: bordersTurnOn linear 500ms;
+  animation-fill-mode: forwards;
+}
+
+.toolSVG path {
+  stroke: #ffe3b9;
+  stroke-width: 1px;
+  fill: none;
+}
+
+.toolSVG polygon, .toolSVG circle, .toolSVG line, .toolSVG path, .toolSVG rect {
+  fill: #ff5100;
+}
+
+.toolSVG polygon.ghub, .toolSVG circle.ghub, .toolSVG line.ghub, .toolSVG path.ghub, .toolSVG rect.ghub {
+  stroke: #ff5100;
+  stroke-width: 3px;
+}
+
+.toolSVG polyline {
+  stroke: #ff5100;
+  stroke-width: 4px;
+  fill: none;
+}
+
+.toolSVG ellipse#AllowMeToIntroduceYouFiliKiliBalinDwalinOriNoriDoriBifurBofurBomburAndTheLiderOfOurCompanyThorinOakenShield {
+  fill: none;
+}
+
+.toolSVG ellipse#elipsefirst {
+  fill: #ff5100;
+}
+
+@keyframes vpowerline {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes hpowerline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes bordersTurnOn {
+  from {
+    border: #ff5100 4px solid;
+    opacity: 1;
+  }
+  10% {
+    border: #ffe3b9 4px solid;
+    opacity: 0.7;
+  }
+  20% {
+    border: #ffd390 4px solid;
+    opacity: 0.5;
+  }
+  30% {
+    border: #ffe3b9 4px solid;
+    opacity: 0.7;
+  }
+  40% {
+    border: #ffd390 4px solid;
+    opacity: 0.4;
+  }
+  60% {
+    border: #ffe3b9 4px solid;
+    opacity: 0.8;
+  }
+  70% {
+    border: #ffd390 4px solid;
+    opacity: 0.3;
+  }
+  to {
+    border: #ff5100 4px solid;
+    opacity: 1;
+  }
+}
+
+.turnOnPositioner {
+  border-top: solid 4px #ff5100;
+  min-width: 768px;
+  height: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 767px) {
+  .turnOnPositioner {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.turnOnPositioner span {
+  color: #ff5100;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.turnOnPositioner .turning-on-positioner {
+  align-self: flex-end;
+  border-bottom: solid 4px #ff5100;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.turnOnPositioner .turning-on-positioner .turning-on-cog line {
+  stroke: #ff5100;
+  stroke-width: 3px;
+}
+
+.turnOnPositioner .turning-on-positioner .turning-on-cog circle {
+  fill: #ff5100;
+}
+
+.turnOnPositioner .turning-on-positioner.press {
+  animation: starterCog 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.turnOnPositioner .turnOnBtn {
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #ff5100;
+  border: #ff5100 solid 1px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.turnOnPositioner .turnOnBtn.beforeIsPressed {
+  animation: beforePressed 1s;
+  animation-iteration-count: infinite;
+}
+
+.turnOnPositioner .turnOnBtn .lineOnOff {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: 70%;
+  width: 15%;
+  background-color: white;
+}
+
+.turnOnPositioner .turnOnBtn.press {
+  animation: starterButton 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes beforePressed {
+  from {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    background-color: #ff5100;
+    border: #ff5100 solid 1px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    box-sizing: border-box;
+    width: 31px;
+    height: 31px;
+    background-color: red;
+    border: white solid 1px;
+    border-radius: 31px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.65);
+  }
+  to {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    background-color: #ff5100;
+    border: #ff5100 solid 1px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes starterButton {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes starterCog {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+.electricityRowOfEvices {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+  flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 767px) {
+  .electricityRowOfEvices {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.electricityRowOfEvices .vp-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 4px;
+  height: 57px;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .electricityRowOfEvices .vp-between {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.electricityRowOfEvices .vp-between.vp-first {
+  align-self: flex-start;
+}
+
+.electricityRowOfEvices .vp-between.vp-second {
+  align-self: flex-end;
+}
+
+.electricityRowOfEvices .vp-between .inside {
+  width: 100%;
+  height: 0%;
+  background-color: #ff5100;
+}
+
+.electricityRowOfEvices .vp-between .inside.animateThisElement {
+  animation: animateThisElement 100ms;
+  animation-fill-mode: forwards;
+}
+
+.electricityRowOfEvices .hp-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 4px;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .electricityRowOfEvices .hp-between {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.electricityRowOfEvices .hp-between.hp-first {
+  width: 30%;
+}
+
+.electricityRowOfEvices .hp-between.hp-second {
+  width: 60px;
+}
+
+.electricityRowOfEvices .hp-between .inside {
+  width: 0;
+  height: 100%;
+  background-color: #ff5100;
+}
+
+.electricityRowOfEvices .hp-between .inside.animateThisElement {
+  animation: animateThisHorizontalElement 100ms;
+  animation-fill-mode: forwards;
+}
+
+.electricityRowOfEvices .elementRectangular {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  border: 4px #ff5100 solid;
+  border-radius: 3px;
+}
+
+.electricityRowOfEvices .elementRectangular .elementRectangularSVG {
+  width: 100%;
+  height: 100%;
+}
+
+.electricityRowOfEvices .elementRectangular .elementRectangularSVG path {
+  stroke-width: 4px;
+  stroke: #ff5100;
+  fill: none;
+}
+
+.electricityRowOfEvices .elementRectangular.animateThisElement {
+  animation: hotResistor 2000ms;
+  animation-fill-mode: forwards;
+}
+
+.electricityRowOfEvices .elementSteamEngine {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border: 4px #ff5100 solid;
+  border-radius: 3px;
+  position: relative;
+}
+
+.electricityRowOfEvices .elementSteamEngine .maincogsteam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.electricityRowOfEvices .elementSteamEngine .maincogsteam.animateThisElement {
+  animation: cicleMovement 500ms;
+  animation-iteration-count: infinite;
+}
+
+.electricityRowOfEvices .elementSteamEngine .maincogsteam #big {
+  stroke-width: 4px;
+  stroke: #ff5100;
+  fill: #ffd390;
+}
+
+.electricityRowOfEvices .elementSteamEngine .maincogsteam #small {
+  stroke-width: 1px;
+  stroke: #ff5100;
+  fill: #ff5100;
+}
+
+.electricityRowOfEvices .elementSteamEngine .mainbox {
+  width: 35%;
+  height: 100%;
+  background-color: #ff5100;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.electricityRowOfEvices .elementSteamEngine .maincorb {
+  width: 15%;
+  height: 4px;
+  background-color: #ff5100;
+  position: relative;
+}
+
+.electricityRowOfEvices .elementSteamEngine .maincorb.animateThisElement {
+  animation: mainCorbMovement 500ms;
+  animation-iteration-count: infinite;
+}
+
+.electricityRowOfEvices .elementSteamEngine .lesserbox {
+  width: 25%;
+  height: 100%;
+  background-color: #ff5100;
+  position: absolute;
+  top: 0;
+  left: 45%;
+  border-radius: 3px;
+}
+
+.electricityRowOfEvices .elementSteamEngine .lessercorb {
+  width: 30%;
+  height: 4px;
+  position: relative;
+  background-color: #ff5100;
+}
+
+.electricityRowOfEvices .elementSteamEngine .lessercorb.animateThisElement {
+  animation: lesserMovement 500ms;
+  animation-iteration-count: infinite;
+}
+
+.electricityRowOfEvices .elementSteamEngine .frontier {
+  width: 5%;
+  height: 100%;
+  background-color: #ff5100;
+  position: relative;
+}
+
+.electricityRowOfEvices .elementSteamEngine .frontier.animateThisElement {
+  animation: lesserMovement 500ms;
+  animation-iteration-count: infinite;
+}
+
+.electricityRowOfEvices .elementSteamEngine.animateThisElement {
+  animation: engineOpacity 500ms;
+  animation-fill-mode: forwards;
+}
+
+.electricityRowOfEvices .track {
+  opacity: 0;
+  width: 280px;
+  height: 10px;
+  border: solid 3px #ff5100;
+}
+
+.electricityRowOfEvices .track .filledtrack {
+  background-color: #ff5100;
+  height: 100%;
+  width: 0;
+}
+
+.electricityRowOfEvices .track .filledtrack.animateThisElement {
+  animation: fillTheTrack 2000ms;
+  animation-fill-mode: forwards;
+}
+
+.electricityRowOfEvices .track.animateThisElement {
+  animation: engineOpacity 500ms;
+  animation-fill-mode: forwards;
+}
+
+.electricityRowOfEvices .spherestation {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 3px #ff5100 solid;
+  background-color: #ff5100;
+  opacity: 0;
+}
+
+.electricityRowOfEvices .spherestation.animateThisElement {
+  animation: spheran 3000ms;
+  animation-fill-mode: forwards;
+}
+
+.electricityRowOfEvices .spherestation.onshow {
+  opacity: 1;
+}
+
+@keyframes animateThisElement {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes animateThisHorizontalElement {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes hotResistor {
+  from {
+    border: solid 4px red;
+    opacity: 1;
+  }
+  5% {
+    border: solid 4px red;
+    opacity: 0;
+  }
+  15% {
+    border: solid 4px red;
+    opacity: 1;
+  }
+  25% {
+    border: solid 4px red;
+    opacity: 0.2;
+  }
+  50% {
+    border: solid 4px #ff5100;
+    opacity: 1;
+  }
+  80% {
+    border: solid 4px #ff5100;
+    opacity: 0.1;
+  }
+  to {
+    border: solid 4px #ff5100;
+    opacity: 1;
+  }
+}
+
+@keyframes engineOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spheran {
+  from {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fillTheTrack {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 0;
+  }
+  20% {
+    width: 30%;
+  }
+  25% {
+    width: 10%;
+  }
+  35% {
+    width: 40%;
+  }
+  40% {
+    width: 15%;
+  }
+  70% {
+    width: 50%;
+  }
+  75% {
+    width: 20%;
+  }
+  85% {
+    width: 60%;
+  }
+  90% {
+    width: 50%;
+  }
+  95% {
+    width: 80%;
+  }
+  96% {
+    width: 77%;
+  }
+  100% {
+    width: 280px;
+  }
+}
+
+@keyframes mainCorbMovement {
+  from {
+    position: relative;
+    top: 35%;
+  }
+  50% {
+    position: relative;
+    top: -35%;
+  }
+  to {
+    position: relative;
+    top: 35%;
+  }
+}
+
+@keyframes lesserMovement {
+  from {
+    position: relative;
+    left: 0;
+  }
+  50% {
+    position: relative;
+    left: 10%;
+  }
+  to {
+    position: relative;
+    left: 0;
+  }
+}
+
+@keyframes cicleMovement {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#sectionToolsAndMaterials .section_left-side {
+  position: relative;
+}
+
+#sectionToolsAndMaterials .section_left-side article.lampAndText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  height: 0;
+  overflow: hidden;
+  background-color: #ffe3b9;
+  border-right: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#sectionToolsAndMaterials .section_left-side article.lampAndText div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#sectionToolsAndMaterials .section_left-side article.lampAndText div div.icona {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: #ffd390;
+  position: relative;
+  z-index: 2;
+}
+
+#sectionToolsAndMaterials .section_left-side article.lampAndText div div.icona.powerToLightt {
+  border: solid 2px #ffe3b9;
+  animation: powerToLight 1000ms;
+  animation-delay: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+#sectionToolsAndMaterials .section_left-side article.lampAndText div div.iconb {
+  width: 0%;
+  height: 4px;
+  background-color: #ff5100;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -2px;
+  border: none;
+  z-index: 1;
+}
+
+#sectionToolsAndMaterials .section_left-side article.lampAndText div div.iconb.powerToThis {
+  animation: powerToHidden 1000ms;
+  animation-fill-mode: forwards;
+}
+
+#sectionToolsAndMaterials .section_left-side article.lampAndText p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#sectionToolsAndMaterials .section_left-side article.lampAndText p span {
+  width: 100%;
+  color: #ff5100;
+  text-align: left;
+  font-family: sans-serif;
+  padding: 0.5rem;
+}
+
+#sectionToolsAndMaterials .section_left-side article.lampAndText p span.titl {
+  padding: 0;
+  width: 100%;
+  color: #ff5100;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+@media only screen and (min-width: 992px) {
+  #sectionToolsAndMaterials .section_left-side article.lampAndText.andPyk {
+    border: solid 6px #ffd390;
+    border-right: none;
+    animation: hiddenLabel 1000ms;
+    animation-fill-mode: forwards;
+    height: auto;
+  }
+}
+
+@keyframes hiddenLabel {
+  from {
+    height: auto;
+    overflow: hidden;
+    display: none;
+    opacity: 1;
+    border: solid 6px #ffd390;
+    border-right: none;
+  }
+  1% {
+    height: auto;
+    overflow: hidden;
+    display: none;
+    opacity: 1;
+    border: solid 6px #ffd390;
+    border-right: none;
+  }
+  25% {
+    height: auto;
+    overflow: hidden;
+    display: none;
+    opacity: 1;
+    border: solid 6px #ffd390;
+    border-right: none;
+  }
+  30% {
+    height: auto;
+    overflow: hidden;
+    display: none;
+    opacity: 0;
+    border: solid 6px #ffd390;
+    border-right: none;
+  }
+  35% {
+    height: auto;
+    overflow: hidden;
+    display: none;
+    opacity: 1;
+    border: solid 6px #ffd390;
+    border-right: none;
+  }
+  40% {
+    height: auto;
+    overflow: hidden;
+    display: none;
+    opacity: 0.7;
+    border: solid 6px #ffd390;
+    border-right: none;
+  }
+  90% {
+    height: auto;
+    overflow: auto;
+    display: flex;
+    opacity: 0.9;
+    border: solid 4px #ffe3b9;
+    border-right: none;
+  }
+  91% {
+    height: auto;
+    overflow: auto;
+    display: flex;
+    opacity: 0.9;
+    border: solid 4px #ff9900;
+    border-right: none;
+  }
+  94% {
+    height: auto;
+    overflow: auto;
+    display: flex;
+    opacity: 0.9;
+    border: solid 4px #ffe3b9;
+    border-right: none;
+  }
+  95% {
+    height: auto;
+    overflow: auto;
+    display: flex;
+    opacity: 0.9;
+    border: solid 2px #ff9900;
+    border-right: none;
+  }
+  to {
+    height: auto;
+    overflow: auto;
+    display: flex;
+    opacity: 1;
+    border: solid 6px #ffd390;
+    border-right: none;
+  }
+}
+
+@keyframes powerToHidden {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes powerToLight {
+  from {
+    border: none;
+  }
+  50% {
+    border: solid 2px #0066ff;
+  }
+  75% {
+    border: none;
+  }
+  to {
+    border: solid 4px #ff5100;
+  }
+}
+
+#sectionToolsAndMaterials .section_left-side h3 {
+  color: #0066ff;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+  margin-bottom: 0.5rem;
+  width: 80%;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+@media only screen and (max-width: 991px) {
+  #sectionToolsAndMaterials .section_left-side h3 {
+    margin: 0.5rem 1rem 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #sectionToolsAndMaterials .section_left-side h3 {
+    width: 90%;
+  }
+}
+
+#sectionToolsAndMaterials .section_left-side article.article-container {
+  width: 80%;
+  padding: 0.5rem;
+  border-top: solid 4px #ff5100;
+  background-color: #ffe3b9;
+}
+
+@media only screen and (max-width: 991px) {
+  #sectionToolsAndMaterials .section_left-side article.article-container {
+    width: 90%;
+  }
+}
+
+#sectionToolsAndMaterials .section_left-side article.article-container p {
+  width: 100%;
+  font-size: 1rem;
+  color: #028602;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#sectionToolsAndMaterials .section_left-side article.article-container p span.artic {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+#sectionToolsAndMaterials .section_left-side article.article-container p span.background-marker {
+  background-color: rgba(2, 134, 2, 0.2);
+  color: #0066ff;
+  text-transform: none;
+  border: none;
+  padding: 0 6px 0 6px;
+}
+
+#sectionToolsAndMaterials .section_left-side article.article-container p span.text-marker {
+  color: #6e00d4;
+  border: none;
+  padding: none;
+  text-transform: none;
+}
+
+#sectionToolsAndMaterials .section_left-side span#btnForMobileUsers {
+  padding: 1rem;
+  margin: 2rem;
+  white-space: nowrap;
+  color: white;
+  border: solid 1px #ff5100;
+  border-radius: 1rem;
+  background-color: #ff5100;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+  text-align: center;
+  align-self: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #sectionToolsAndMaterials .section_left-side span#btnForMobileUsers {
+    display: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+}

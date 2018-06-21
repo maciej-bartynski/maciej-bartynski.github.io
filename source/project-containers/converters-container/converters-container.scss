@@ -1,0 +1,95 @@
+.project-container.converters {
+    background-color: $backcolor;
+    header {
+        .project-container_head_type {
+            h2 {
+                color: $jsdot;
+            }
+        }
+        .project-container_head_title {
+            color: $brandcolor;
+        }
+        .project-container_head_about {
+            color: $brandcolor;
+        }
+    }
+    main {
+        transition: all 500ms;
+        @media only screen and (max-width: 220mm) {
+            flex-wrap: wrap;
+        }
+        .project-container_positioner {
+            transition: all 500ms;
+            @media only screen and (max-width: 220mm) {
+                width: 47%;
+            }
+            @media only screen and (max-width: 120mm) {
+                width: 100%;
+            }
+            position: relative;
+            @include lesserShadow();
+            border-radius: 3px;
+            border: solid 2px $brandcolor;
+            overflow: hidden;
+            width: 20%;
+            height: 200px;
+            margin: 0.5rem;
+            @include column($fstart, $center);
+            background-color: $brandcolor;
+            &:nth-of-type(4) {
+                background-color: $jsdot;
+                border: solid 2px $jsdot;
+                p {
+                    border-top: solid $jsdot 1px;
+                    border-bottom: solid $jsdot 1px;
+                }
+                &:hover {
+                    border-color: $brandcolor;
+                    background-color: $brandcolor;
+                    & p {
+                        border-top: solid $brandcolor 1px;
+                        border-bottom: solid $brandcolor 1px;
+                    }
+                }
+            }
+            iframe {
+                transition: all 500ms;
+                opacity: 0.5;
+                width: 100%;
+                height: 100%;
+                background-color: $secondcolor;
+                border: none;
+                pointer-events: none;
+            }
+            p {
+                transition: all 500ms;
+                width: 100%;
+                height: 7rem;
+                font-size: 0.6rem;
+                line-height: 1rem;
+                padding: 3rem 0 3rem 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.8);
+                border-top: 2px solid $brandcolor;
+                border-bottom: 2px solid $brandcolor;
+                text-align: center;
+                font-family: sans-serif;
+                font-weight: 400;
+                color: $secondcolor;
+            }
+            &:hover {
+                border-color: $jsdot;
+                background-color: rgba(255, 102, 0, 1);
+                & p {
+                    border-top: solid $jsdot 1px;
+                    border-bottom: solid $jsdot 1px;
+                }
+            }
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
+}

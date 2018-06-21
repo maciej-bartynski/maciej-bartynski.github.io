@@ -1,0 +1,26 @@
+nav.language-nav {
+    width: 100%;
+    @include row ($center, $center);
+    padding: 1rem 0 1rem 0;
+    ul {
+        padding:0;
+        margin: 0;
+        @include row ($center, $center);
+        font-size: 0.7rem;
+        li {
+            //color: $secondcolor;
+            color: rgb(201, 201, 201);
+            list-style: none;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            padding: 0 0.5rem 0 0.5rem;
+            cursor: pointer;
+            &.active{
+                //color: $brandcolor;
+                color: rgb(201, 201, 201);
+                //background-color: $secondcolor;
+                border: 1px solid rgb(201, 201, 201);
+            }
+        }
+    }
+}

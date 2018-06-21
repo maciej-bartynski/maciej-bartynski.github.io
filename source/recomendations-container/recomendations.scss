@@ -1,0 +1,59 @@
+.recomendations-temporary-positioner {
+    @media only screen and (max-width: 220mm) {
+        width:100%;
+    }
+    margin: 50px auto;
+    width: 210mm;
+    .recomendations-container {
+        @media only screen and (max-width: 220mm) {
+            width:100%;
+        }
+        width: 50%;
+        @include shadow();
+        @include column($fstart, $fstart);
+        background-color: $backcolor;
+        header {
+            @include row($fstart, $fend);
+            margin: 0, 0, 0.5rem, 0;
+            width:100%;
+            h2 {
+                margin: 0;
+                padding: 0;
+                color: $brandcolor;
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+                font-family: sans-serif;
+            }
+        }
+        main{
+            padding: 2rem;
+            @media only screen and (max-width: 220mm) {
+                padding: 0.5rem;
+            }
+            @include column($fstart, $center);
+            width:100%;
+            margin: 0,0,2rem,0;
+            .img-background-and-positioner{
+                width: 40px;
+                height: 40px;
+                border-radius: 40px;
+                background-color: $brandgray;
+                @include row($center, $center);
+            }
+            p {
+                width: 100%;
+                color: $brandgray;
+                font-family: sans-serif;
+                line-height: 2rem;
+            }
+            span {
+                width: 100%;
+                text-align: right;
+                color: $brandcolor;
+                font-weight: 700;
+                font-family: sans-serif;
+                margin: 2rem 0;
+            }
+        }
+    }
+}

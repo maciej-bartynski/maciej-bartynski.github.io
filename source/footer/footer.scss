@@ -1,0 +1,45 @@
+.main-footer {
+    margin-top: 50vh;
+    @include column ($fstart, $fstart);
+    width: 100%;
+    background-color: $brandgray;
+    background-color: rgb(107, 82, 107);
+    padding: 5rem;
+    @include shadow();
+    @media only screen and (max-width: 220mm){
+        padding: 5rem 0.5rem;
+    }
+    div {
+        align-self: center;
+        width: 5%;
+        height:0;
+        border: none;
+        border-top: gray 1px solid;
+        margin: 2rem 0 2rem 0;
+    }
+    span {
+        color: rgb(179, 179, 179);
+        font-family: sans-serif;
+        font-weight: 200;
+        width: 100%;
+        font-size: 0.7rem;
+        &.author{
+            color: white;
+            font-size: 1rem;
+            @include row($center, $center);
+            font-weight: 500;
+        }
+        &.main-footer_contact{
+            @include row($center, $center);
+            flex-wrap: wrap;
+            .tel, .mail{
+                color: white;
+                font-weight: 500;
+                font-size: 1rem;
+                width: 100%;
+                margin: 1rem 0 0 0;
+                text-align: center;
+            }
+        }
+    }
+}

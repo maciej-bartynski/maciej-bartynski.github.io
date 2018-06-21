@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Junior Front-End Develper Maciej Bartyński</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="bundle/styles.css" />
+    <script src="bundle/main.js"></script>
+</head>
+
+<body>
+
+    <nav class="main-nav">
+        <svg class="menu-item" id="hide-menu" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+            <rect x="2.833" y="4.625" style="fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;" width="19.792" height="3.5" />
+            <rect x="2.833" y="11.125" style="fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;" width="9.542" height="3.5" />
+            <rect x="2.833" y="17.625" style="fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;" width="18.167" height="3.5" />
+        </svg>
+        <ul class="isActive">
+            <li class="menu-item" id="cv-eng">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                    style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <g>
+                        <path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M3.479,10.479h6c0.55,0,1-0.45,1-1v-6
+                       c0-0.55-0.45-1-1-1h14.042c2.2,0,4,1.8,4,4v17.042c0,2.2-1.8,4-4,4H6.479c-2.2,0-4-1.8-4-4V9.479
+                       C2.479,10.029,2.929,10.479,3.479,10.479z" />
+                        <path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M3.479,10.479h6c0.55,0,1-0.45,1-1v-6
+                       c0-0.55-0.45-1-1-1l-7,7C2.479,10.029,2.929,10.479,3.479,10.479z" />
+                        <path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M12.825,17.684
+                       c0.738,0.695,1.726,1.129,2.821,1.129s2.082-0.434,2.821-1.129C21.69,18.449,24,20.481,24,22.875
+                       c-0.042,0.063-16.667,0.021-16.708,0C7.292,20.481,9.601,18.449,12.825,17.684z" />
+                        <ellipse style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" cx="15.646" cy="13.021" rx="3.375" ry="3.5" />
+                    </g>
+                </svg>
+                <span>CV (ENG)</span>
+            </li>
+            <li class="menu-item" id="cv-pol">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                    style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <g>
+                        <path id="XMLID_7_" style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M26.521,10.479h-6c-0.55,0-1-0.45-1-1v-6
+                       c0-0.55,0.45-1,1-1H6.479c-2.2,0-4,1.8-4,4v17.042c0,2.2,1.8,4,4,4h17.042c2.2,0,4-1.8,4-4V9.479
+                       C27.521,10.029,27.071,10.479,26.521,10.479z" />
+                        <path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M26.521,10.479h-6c-0.55,0-1-0.45-1-1v-6
+                       c0-0.55,0.45-1,1-1l7,7C27.521,10.029,27.071,10.479,26.521,10.479z" />
+                        <path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M17.175,17.684
+                       c-0.738,0.695-1.726,1.129-2.821,1.129s-2.082-0.434-2.821-1.129C8.31,18.449,6,20.481,6,22.875c0.042,0.063,16.667,0.021,16.708,0
+                       C22.708,20.481,20.399,18.449,17.175,17.684z" />
+                        <ellipse style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" cx="14.354" cy="13.021" rx="3.375" ry="3.5" />
+                    </g>
+                </svg>
+                <span>CV (PL)</span>
+            </li>
+            <li class="menu-item" id="portfolio-projects">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                    style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M18.199,8.41l1.329-1.329
+                   c0.714-0.714,0.836-1.794,0.387-2.646l-2.347,2.347c-0.219,0.219-0.578,0.219-0.797,0l-1.428-1.428
+                   c-0.219-0.219-0.219-0.578,0-0.797l2.357-2.357c-0.858-0.477-1.963-0.362-2.69,0.364l-1.329,1.329
+                   c-0.809,0.809-0.862,2.087-0.179,2.969l-6.203,6.203c-0.883-0.683-2.161-0.63-2.969,0.179l-1.329,1.329
+                   c-0.714,0.714-0.836,1.794-0.387,2.646l2.347-2.347c0.219-0.219,0.578-0.219,0.797,0L7.186,16.3c0.219,0.219,0.219,0.578,0,0.797
+                   l-2.357,2.357c0.858,0.477,1.963,0.362,2.69-0.364l1.329-1.329c0.809-0.809,0.862-2.087,0.179-2.969l6.203-6.203
+                   C16.112,9.272,17.39,9.219,18.199,8.41z" />
+                    <path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M17.186,15.584l5.122-5.122l0.723-0.075
+                   l0.747-1.545l-0.747-0.747l-1.545,0.747l0.008,0.806l-5.122,5.122c-0.354-0.066-1.531-0.761-1.804-0.488l-6.378,6.378
+                   c-0.438,0.438-0.438,1.156,0,1.594l1.511,1.511c0.438,0.438,1.156,0.438,1.594,0l6.378-6.378
+                   C17.947,17.115,17.252,15.937,17.186,15.584z" />
+                    <polygon style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" points="11.962,26.122 13.927,28.088 
+                   25.236,18.071 27.65,12.453 22.032,14.867 " />
+                    <polygon style="fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;" points="25.841,13.337 27.404,12.633 
+                   26.699,14.195 " />
+                </svg>
+
+                <span>Projekty</span>
+            </li>
+            <li class="menu-item" id="recomendations">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                    style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M19.542,3h-8.458c-3.85,0-7,3.15-7,7v3.625
+                   c0,2.896,1.783,5.395,4.305,6.456L5.613,27.75l11.657-7.125h2.272c3.85,0,7-3.15,7-7V10C26.542,6.15,23.392,3,19.542,3z"
+                    />
+                    <polygon style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" points="15.25,14.156 12.694,15.5 13.182,12.654 
+                   11.114,10.638 13.972,10.222 15.25,7.632 16.528,10.222 19.386,10.638 17.318,12.654 17.806,15.5 " />
+                </svg>
+                <span>Rekomendacje</span>
+            </li>
+            <li class="menu-item" id="linkedin">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512"
+                    viewBox="0 0 512 512">
+                    <path d="M29.675 177.275l92.784-1.157v303.831l-92.784 1.178v-303.851z" fill="white" />
+                    <path d="M200.141 177.275l88.658-1.126v38.646l0.021 10.947c26.255-25.744 53.32-45.2 96.563-45.2 51.016 0 100.362 21.381 100.362 91.034v208.435l-90 1.341v-159.232c0-35.103-8.796-57.733-50.719-57.733-36.935 0-52.398 6.615-52.398 55.214v160.399l-92.478 1.116v-303.841z"
+                        fill="white" />
+                    <path d="M127.836 81.449c0 28.051-22.74 50.79-50.79 50.79s-50.791-22.739-50.791-50.791c0-28.051 22.739-50.791 50.791-50.791 28.051 0 50.791 22.739 50.791 50.791z"
+                        fill="white" />
+                </svg>
+                <span>LinkedIn</span>
+            </li>
+            <li class="menu-item" id="github">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="438.549px"
+                    height="438.549px" viewBox="0 0 438.549 438.549" style="enable-background:new 0 0 438.549 438.549;" xml:space="preserve">
+                    <g>
+                        <path fill="white" d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+                       c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
+                       c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
+                       c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
+                       c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559
+                       c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559
+                       c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997
+                       c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851
+                       c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136
+                       c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41
+                       c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126
+                       c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817
+                       c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994
+                       c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849
+                       c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24
+                       c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979
+                       c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
+                       c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
+                       c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
+                       C438.536,184.851,428.728,148.168,409.132,114.573z" />
+                    </g>
+                </svg>
+                <span>Github</span>
+            </li>
+        </ul>   
+    </nav>
+
+    <div class="main-container">
+        <!--START: LEFT COLUMN-->
+        <section class="left-column">
+            <nav class="language-nav">
+                <ul>
+                    <li id="PLBtn">
+                        PL
+                    </li>
+                    <li id="ENGBtn" class="active">
+                        ENG
+                    </li>
+                </ul>
+            </nav>
+            <header>
+                <img src="./photo.png" id="maciej-bartynski-portrait" alt="Maciej Bartyński - portrait">
+                <div>
+                    <span>MACIEJ</span>
+                    <span>BARTYŃSKI</span>
+                </div>
+                <span>junior front-end developer</span>
+            </header>
+            <aside>
+                <div class="left-column_contact">
+                    <div class="left-column_contact_item phone">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                            style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                            <g>
+                                <path style="fill:rgb(175, 175, 175);" d="M19.975,25.286h-9.968c-0.783,0-1.417-0.635-1.417-1.417V6.164
+                                   c0-0.783,0.635-1.417,1.417-1.417h9.968c0.783,0,1.417,0.635,1.417,1.417v17.704C21.392,24.651,20.758,25.286,19.975,25.286z"
+                                />
+                                <path style="fill:#5D5D5D;" d="M19.054,22.156h-8.125c-0.783,0-1.417-0.635-1.417-1.417V7.085
+                                   c0-0.783,0.635-1.417,1.417-1.417h8.125c0.783,0,1.417,0.635,1.417,1.417v13.654C20.471,21.522,19.837,22.156,19.054,22.156z"
+                                />
+
+                                <circle style="fill:#5D5D5D;stroke:rgb(175, 175, 175);stroke-width:1.2803;stroke-miterlimit:10;" cx="14.991" cy="22.292" r="2.065" />
+                            </g>
+                        </svg>
+                        <span>784 482 159</span>
+                    </div>
+                    <div class="left-column_contact_item email">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                            style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                            <g>
+                                <path style="fill:#5D5D5D;" d="M4.878,20.159v-8.196c0-0.783,0.635-1.417,1.417-1.417h17.113
+                           c0.783,0,1.417,0.635,1.417,1.417v8.196c0,0.783-0.635,1.417-1.417,1.417H6.295C5.512,21.576,4.878,20.942,4.878,20.159z"
+                                />
+                                <path style="fill:rgb(175, 175, 175);" d="M24.61,10.787c0.003-0.042,0.013-0.083,0.013-0.126l-6.443-4.8c-3.126-2.242-3.34-2.242-6.285,0
+                           l-6.443,4.8c0,0.024,0.006,0.046,0.007,0.069c-0.479,0.329-0.794,0.88-0.794,1.505v9.232c0,1.009,0.818,1.826,1.826,1.826h17.018
+                           c1.009,0,1.826-0.818,1.826-1.826v-9.232C25.335,11.642,25.048,11.12,24.61,10.787z M12.969,17.962l-7.732-4.801
+                           c0-1.009,0.818-1.826,1.826-1.826h15.519c1.009,0,1.826,0.818,1.826,1.826l-6.443,4.801" />
+                            </g>
+                        </svg>
+                        <span>maciek.bartynski@gmail.com</span>
+                    </div>
+                    <div class="left-column_contact_item linkedin">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-150 -100 812 812">
+                                <path d="M29.675 177.275l92.784-1.157v303.831l-92.784 1.178v-303.851z" fill="#5D5D5D" />
+                                <path d="M200.141 177.275l88.658-1.126v38.646l0.021 10.947c26.255-25.744 53.32-45.2 96.563-45.2 51.016 0 100.362 21.381 100.362 91.034v208.435l-90 1.341v-159.232c0-35.103-8.796-57.733-50.719-57.733-36.935 0-52.398 6.615-52.398 55.214v160.399l-92.478 1.116v-303.841z" fill="#5D5D5D" />
+                                <path d="M127.836 81.449c0 28.051-22.74 50.79-50.79 50.79s-50.791-22.739-50.791-50.791c0-28.051 22.739-50.791 50.791-50.791 28.051 0 50.791 22.739 50.791 50.791z" fill="#5D5D5D" />
+                            </svg>
+                        <span>linkedin.com/in/maciej-bartynski</span>
+                    </div>
+                </div>
+                <article class="left-column_article about-me">
+                    <div class="left-column_article_head">
+                        <svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                            <circle id="XMLID_6_" style="fill:#F9F9F9;stroke:rgb(175, 175, 175);stroke-width:0.2236;stroke-miterlimit:10;" cx="15" cy="15" r="15"
+                            />
+                            <path id="XMLID_5_" style="fill:#5D5D5D;" d="M25.493,23.693c0,2.313-5.468,5.358-10.546,5.358S4.592,25.277,4.511,23.693
+                           c-0.173-3.381,5.413-7.426,10.491-7.426S25.493,20.307,25.493,23.693z" />
+                            <ellipse id="XMLID_4_" style="fill:#5D5D5D;stroke:#FFFFFF;stroke-width:1.3365;stroke-miterlimit:10;" cx="15" cy="13.433"
+                                rx="5.7" ry="6.06" />
+                            <circle id="XMLID_3_" style="fill:#14C435;stroke:#FFFFFF;stroke-width:1.5379;stroke-miterlimit:10;" cx="25.052" cy="25.12"
+                                r="3.845" />
+                        </svg>
+                        <h2>about
+                            <span class="strong">me</span>
+                        </h2>
+                    </div>
+                    <p>I am a self-taught
+                        <span class="strong">Front-End Developer</span> determined to get into the tech industry. While working with graphic and
+                        UX design I came across CSS and HTML. I found web technologies extremely fascinating because they
+                        shape the world. And I want to understand the process or even more – participate in it. I am learning
+                        <span class="strong">JavaScript</span> and other different tools on my own. I am looking for an internship to develop
+                        my skills under the guidance of a specialist.</p>
+                </article>
+                <article class="left-column_article my-goals">
+                    <div class="left-column_article_head">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                            style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                            <ellipse style="fill:#5D5D5D;stroke:#FFFFFF;stroke-width:1.3365;stroke-miterlimit:10;" cx="15" cy="13.433" rx="5.7" ry="6.06"
+                            />
+                            <g>
+                                <path style="fill:rgb(175, 175, 175);" d="M20.002,5.735L19.997,5.73c-2.749-2.749-7.246-2.749-9.995,0L9.998,5.735
+                               c-1.988,1.988-2.53,4.89-1.642,7.384l6.479,13.18l6.809-13.18C22.532,10.625,21.99,7.723,20.002,5.735z"
+                                />
+                                <circle style="fill:#5D5D5D;" cx="15.015" cy="10.477" r="5.194" />
+                            </g>
+                        </svg>
+                        <h2>my
+                            <span class="strong">goal</span>
+                        </h2>
+                    </div>
+                    <p>I want to develop my skills throughout the
+                        <span class="strong">Front-End Developer carrier</span>
+                        and at the same time learn new Back-End technologies. In 10 years I want to be a skilled
+                        <span class="strong">Full-Stack Developer</span>.</p>
+                </article>
+            </aside>
+        </section>
+        <!--END: LEFT COLUMN-->
+        <!--START: RIGHT COLUMN-->
+        <section class="right-column">
+            <!--START: ARTICLE-->
+            <article class="right-column_article">
+                <header class="right-column_article_title">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                        style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path id="XMLID_6_" style="fill:none;stroke:#E86B6B;stroke-width:1.1024;stroke-miterlimit:10;" d="M19.214,1.043
+                               c-0.552,0.13-0.751,0.199-1.332,0.78l-1.851,1.851c-0.581,0.581-0.617,0.617-0.78,1.332c-0.103,0.451,0.772,0.463,1.202,0.421
+                               c0.049,0.06,0.091,0.124,0.146,0.179l6.756,6.756c0.884,0.884,2.331,0.884,3.215,0c0.884-0.884,0.884-2.331,0-3.215L19.815,2.39
+                               c-0.056-0.056-0.119-0.098-0.179-0.146C19.678,1.814,19.665,0.936,19.214,1.043z" />
+
+                                <rect x="16.672" y="4.391" transform="matrix(0.7071 -0.7071 0.7071 0.7071 1.8198 13.8186)" style="fill:#E86B6B;" width="1.837"
+                                    height="0.643" />
+
+                                <rect x="18.231" y="5.951" transform="matrix(0.7071 -0.7071 0.7071 0.7071 1.1738 15.3781)" style="fill:#E86B6B;" width="1.837"
+                                    height="0.643" />
+
+                                <rect x="19.791" y="7.51" transform="matrix(0.7071 -0.7071 0.7071 0.7071 0.5278 16.9376)" style="fill:#E86B6B;" width="1.837"
+                                    height="0.643" />
+
+                                <rect x="21.35" y="9.07" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.1182 18.4971)" style="fill:#E86B6B;" width="1.837"
+                                    height="0.643" />
+                            </g>
+                            <path style="fill:none;stroke:#E86B6B;stroke-width:1.7777;stroke-miterlimit:10;" d="M15.786,15.184
+                           c0-1.296,0.1-1.934,0.154-3.445c0.777-0.103,1.384-0.766,1.384-1.571c0-0.875-0.716-1.592-1.592-1.592H9.688
+                           c-0.875,0-1.592,0.716-1.592,1.592c0,0.804,0.607,1.467,1.384,1.571c0.055,1.511,0.154,2.149,0.154,3.445l-6.869,9.965
+                           c0,1.785,1.46,3.817,3.245,3.817H19.41c1.785,0,3.245-2.033,3.245-3.817L15.786,15.184z" />
+                        </g>
+                    </svg>
+                    <h3>education</h3>
+                </header>
+                <main class="right-column_article_item">
+                    <div class="right-column_article_date">
+                        2011 - 2017
+                    </div>
+                    <div class="right-column_article_corp">
+                        <h4>faculty of communication design at university of wroclaw</h4>
+                        <p>Master's degree in the field of pseudocode in boardgames. The project nominated for the award “Dyplom
+                            Roku”.
+                        </p>
+                        <ul>
+                            <p>Technologies learnt during studies: </p>
+                            <li>graphic design</li>
+                            <li>corporate identity design</li>
+                            <li>HTML, CSS</li>
+                            <li>XAMPP, CMS (Wordpress)</li>
+                            <li>Axure framework</li>
+                        </ul>
+                    </div>
+                </main>
+            </article>
+            <!--END: ARTICLE-->
+            <!--START: ARTICLE-->
+            <article class="right-column_article">
+                <header class="right-column_article_title">
+                </header>
+                <main class="right-column_article_item">
+                    <div class="right-column_article_date" id="languages">
+                        languages:
+                    </div>
+                    <div class="right-column_article_corp">
+                        <h4>english: b2+, polish: native</h4>
+                    </div>
+                </main>
+            </article>
+            <!--END: ARTICLE-->
+            <!--START: ARTICLE-->
+            <article class="right-column_article">
+                <header class="right-column_article_title">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                        style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                        <polygon style="fill:#E86B6B;" points="14.602,1.146 19.387,10.014 29.405,11.101 22.449,18.392 24.511,28.255 
+                       15.428,23.893 6.684,28.902 8.027,18.915 0.56,12.148 10.473,10.338 " />
+                    </svg>
+                    <h3>experience</h3>
+                </header>
+                <main class="right-column_article_item">
+                    <div class="right-column_article_date">
+                        2018
+                    </div>
+                    <div class="right-column_article_corp">
+                        <h4>front-end dev army course</h4>
+                        <ul>
+                            <p>An intensive course in JavaScript programming and front-end technologies
+                            </p>
+                            <li>learning HTML5 + CSS3</li>
+                            <li>learning flexbox and media query technique</li>
+                            <li>Carrying out a project based on NPM (including: Babel, Rollup)</li>
+                        </ul>
+                    </div>
+                </main>
+            </article>
+            <!--END: ARTICLE-->
+            <!--START: ARTICLE-->
+            <article class="right-column_article">
+                <header class="right-column_article_title">
+                </header>
+                <main class="right-column_article_item">
+                    <div class="right-column_article_date">
+                        2015 - 2018
+                    </div>
+                    <div class="right-column_article_corp">
+                        <h4>graphic designer</h4>
+                        <p>Making graphic designs for clubs, pubs and entertaining companies in Wrocław: Alive, Alive Stage,
+                            Stary Klasztor, Stara Piwnica. Materials for print and online usage.
+
+                        </p>
+                        <p>Managing and creating graphic and identity projects.</p>
+                    </div>
+                </main>
+            </article>
+            <!--END: ARTICLE-->
+            <!--START: ARTICLE-->
+            <article class="right-column_article">
+                <header class="right-column_article_title">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                        style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                        <g>
+                            <polygon style="fill:none;stroke:#E86B6B;stroke-width:1.6353;stroke-miterlimit:10;" points="25.857,22.677 
+                           15.045,27.719 4.234,22.677 1.372,2.281 28.719,2.281 	" />
+                            <polygon style="fill:#E86B6B;" points="14.955,27.719 4.143,22.677 1.281,2.281 15.09,2.281 	" />
+                        </g>
+                    </svg>
+                    <h3>front-end and programming languages</h3>
+                </header>
+                <main class="right-column_article_item">
+                    <!-- START: CSS -->
+                    <div class="right-column_article_code-lang">
+                        <div class="code-lang_head">
+                            <div class="dot css"></div>
+                            <div class="css">
+                                CSS 3
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Flexbox</li>
+                            <li>Media queries</li>
+                            <li>Keyframes</li>
+                            <li>Transitions</li>
+                        </ul>
+                    </div>
+                    <!-- END: CSS -->
+                    <!--START: HTML-->
+                    <div class="right-column_article_code-lang">
+                        <div class="code-lang_head">
+                            <div class="dot html"></div>
+                            <div class="html">
+                                HTML 5
+                            </div>
+                        </div>
+                        <ul>
+                            <li>SVG</li>
+                            <li>Semantic tags</li>
+                            <li>Iframes</li>
+                            <li>Forms and tables</li>
+                        </ul>
+                    </div>
+                    <!--END: HTML-->
+                    <!--START JAVASCRIPT-->
+                    <div class="right-column_article_code-lang">
+                        <div class="code-lang_head">
+                            <div class="dot js"></div>
+                            <div class="js">
+                                JavaScript
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Working with DOM</li>
+                            <li>Recursive functions</li>
+                            <li>Understanding loops</li>
+                        </ul>
+                    </div>
+                    <!--END JAVASCRIPT-->
+                </main>
+            </article>
+            <!--END: ARTICLE-->
+            <!--START: ARTICLE-->
+            <article class="right-column_article">
+                <header class="right-column_article_title">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                        style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                        <circle style="fill:none;stroke:#E86B6B;stroke-width:1.9246;stroke-miterlimit:10;" cx="15.042" cy="9.518" r="8.36" />
+                        <g>
+
+                            <line style="fill:none;stroke:#E86B6B;stroke-width:1.9246;stroke-miterlimit:10;" x1="13.839" y1="17.156" x2="12.275" y2="9.939"
+                            />
+
+                            <line style="fill:none;stroke:#E86B6B;stroke-width:1.9246;stroke-miterlimit:10;" x1="11.433" y1="11.743" x2="19.011" y2="11.743"
+                            />
+
+                            <line style="fill:none;stroke:#E86B6B;stroke-width:1.9246;stroke-miterlimit:10;" x1="18.159" y1="10.156" x2="16.496" y2="17.179"
+                            />
+                        </g>
+                        <path style="fill:#E86B6B;" d="M20.02,25.703c0.002-0.023,0.014-0.051,0.014-0.074v-6.64
+                       c0-3.87-0.933-2.074-2.074-2.074h-5.475c-1.141,0-2.074-1.519-2.074,2.074v6.64c0,0.024,0.013,0.053,0.014,0.078
+                       c-0.002,0.051-0.017,0.098-0.017,0.149c0,2.288,2.156,4.143,4.815,4.143c2.659,0,4.815-1.855,4.815-4.143
+                       C20.038,25.804,20.023,25.755,20.02,25.703z" />
+                    </svg>
+                    <h3>main tools</h3>
+                </header>
+                <main class="right-column_article_item">
+                    <!-- START: CSS -->
+                    <div class="right-column_article_code-tools">
+                        <div class="code-tools_head">
+                            <div class="dot gray"></div>
+                            <div>
+                                coding
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Konsola Bash</li>
+                            <li>SourceTree</li>
+                        </ul>
+                    </div>
+                    <!-- END: CSS -->
+                    <!--START: HTML-->
+                    <div class="right-column_article_code-tools">
+                        <div class="code-tools_head">
+                            <div class="dot gray"></div>
+                            <div>
+                                designing
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Axure</li>
+                            <li>CSS-matic tools</li>
+                        </ul>
+                    </div>
+                    <!--END: HTML-->
+                    <!--START JAVASCRIPT-->
+                    <div class="right-column_article_code-tools">
+                        <div class="code-tools_head">
+                            <div class="dot gray"></div>
+                            <div>
+                                testing
+                            </div>
+                        </div>
+                        <ul>
+                            <li>XAMPP</li>
+                            <li>Browser Developer Panel</li>
+                        </ul>
+                    </div>
+                    <!--END JAVASCRIPT-->
+                </main>
+            </article>
+            <!--END: ARTICLE-->
+            <!--START: ARTICLE-->
+            <article class="right-column_article">
+                <header class="right-column_article_title">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                        style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path style="fill:#E86B6B;" d="M29.015,18.72V11.28h-2.798c-0.181-0.546-0.403-1.071-0.658-1.579l1.982-1.982
+                               L22.28,2.459l-1.982,1.982c-0.507-0.255-1.033-0.478-1.579-0.658V0.985H11.28v2.798c-0.546,0.181-1.071,0.403-1.579,0.658
+                               L7.72,2.459L2.46,7.72l1.982,1.982c-0.255,0.507-0.478,1.033-0.658,1.579H0.985v7.439h2.798c0.181,0.546,0.403,1.071,0.658,1.579
+                               L2.46,22.28l5.26,5.26l1.982-1.982c0.507,0.255,1.033,0.478,1.579,0.658v2.798h7.439v-2.798c0.546-0.181,1.071-0.403,1.579-0.658
+                               l1.982,1.982l5.261-5.26l-1.982-1.982c0.255-0.507,0.478-1.033,0.658-1.579H29.015z" />
+
+                                <circle style="fill:#E86B6B;stroke:#FFFFFF;stroke-width:2.1255;stroke-miterlimit:10;" cx="15" cy="15" r="8.635" />
+                            </g>
+                            <circle style="fill:#FFFFFF;" cx="15" cy="15" r="3.321" />
+                        </g>
+                    </svg>
+                    <h3>other tools</h3>
+                </header>
+                <main class="right-column_article_item">
+                    <div class="right-column_article_other-tools">
+                        <div class="other-tools_head">
+                            <div>
+                                Github
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column_article_other-tools">
+                        <div class="other-tools_head">
+                            <div>
+                                Node.js
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column_article_other-tools">
+                        <div class="other-tools_head">
+                            <div>
+                                Zeplin
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column_article_other-tools">
+                        <div class="other-tools_head">
+                            <div>
+                                Inkscape
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column_article_other-tools">
+                        <div class="other-tools_head">
+                            <div>
+                                CorelDraw
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </article>
+            <!--END: ARTICLE-->
+        </section>
+        <!--END: RIGHT COLUMN-->
+    </div>
+
+    <section class="project-container converters">
+        <header class="project-container_head">
+            <div class="project-container_head_type">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                    style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <path style="fill:#F26722;stroke:#F26722;stroke-width:0.8946;stroke-miterlimit:10;" d="M12.427,20.198l3.721-3.721
+	c0.066-0.066,0.121-0.138,0.168-0.216l0.46-0.46c0.078-0.046,0.151-0.102,0.216-0.168l3.721-3.721
+	c2.019,1.206,4.393,1.172,5.818-0.253c1.168-1.168,1.398-2.973,0.781-4.698c-0.667,0.724-2.267,2.45-2.267,2.45
+	c-2.625,0.794-2.64,0.74-3.801-0.422c-1.161-1.161-1.123-1.123-0.422-3.801c0,0,1.619-1.519,2.45-2.267
+	c-1.725-0.617-3.531-0.387-4.698,0.781c-1.425,1.425-1.459,3.799-0.253,5.818l-3.721,3.721c-0.066,0.066-0.121,0.138-0.168,0.216
+	l-0.46,0.46c-0.078,0.046-0.151,0.102-0.216,0.168l-3.721,3.721c-2.019-1.206-4.393-1.172-5.818,0.253
+	c-1.168,1.168-1.398,2.973-0.781,4.698c0.667-0.724,2.267-2.45,2.267-2.45c2.625-0.794,2.64-0.74,3.801,0.422
+	c1.161,1.161,1.123,1.123,0.422,3.801c0,0-1.619,1.519-2.45,2.267c1.725,0.617,3.531,0.387,4.698-0.781
+	C13.599,24.592,13.633,22.217,12.427,20.198z" />
+                </svg>
+                <h2>JavaScript</h2>
+            </div>
+            <h3 class="project-container_head_title">Konwertery i kalkulatory</h3>
+            <span class="project-container_head_about">Nauka JS - od prostego TermoCalc'a działającego (prawdopodobnie) tylko w Chrome, do rozbudowanego Konwertera
+                Jednostek. Czwarta aplikacja była testowana w: Chrome, Safari, Explorer, Edge, Opera i Firefox.</span>
+        </header>
+        <main class="project-container_main">
+            <div class="project-container_positioner">
+                <iframe src="./iframes/converters/1st/index.html"></iframe>
+                <p>TermoCalc</p>
+            </div>
+            <div class="project-container_positioner">
+                <iframe src="./iframes/converters/2nd/index.html"></iframe>
+                <p>CashCalc</p>
+            </div>
+            <div class="project-container_positioner">
+                <iframe src="./iframes/converters/3rd/converter.html"></iframe>
+                <p>CashCalc v.2</p>
+            </div>
+            <div class="project-container_positioner">
+                <iframe src="./iframes/converters/4th/index.html"></iframe>
+                <p>Konwerter Jednostek</p>
+            </div>
+        </main>
+    </section>
+
+    <section class="project-container keyframes">
+        <header class="project-container_head">
+            <div class="project-container_head_type">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                    style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <g>
+                        <path style="fill:#58439B;stroke:#58439B;stroke-width:0.5;stroke-miterlimit:10;" d="M19.165,9.551
+		c0.603-0.748,1.242-2.079,1.098-3.7c-0.22-2.476-3.482-4.452-3.189-4.03c2.259,3.251-0.892,3.523-0.672,5.999
+		c0.076,0.86,0.275,1.411,0.523,1.768c-0.725,0.189-1.266,0.846-1.266,1.627v2.917c0,0.538,0.259,1.013,0.654,1.323
+		c-0.019,0.47-0.031,0.971-0.031,1.518c0,4.959,0.831,11.264,1.856,11.264s1.856-6.305,1.856-11.264
+		c0-0.547-0.012-1.048-0.031-1.518c0.395-0.31,0.654-0.785,0.654-1.323v-2.917C20.617,10.367,19.982,9.668,19.165,9.551z" />
+                        <polygon style="fill:#58439B;stroke:#58439B;stroke-width:0.5;stroke-miterlimit:10;" points="13.226,10.337 
+		13.181,10.17 13.221,9.474 12.991,9.474 11.305,3.276 9.618,9.474 9.388,9.474 9.383,10.337 9.438,10.337 10.388,26.724 
+		12.221,26.724 13.171,10.337 	" />
+                    </g>
+                </svg>
+                <h2>CSS, Keyframes</h2>
+                <div class="closingBtn">X</div>
+            </div>
+            <h3 class="project-container_head_title">Animacja wielu elementów naraz</h3>
+            <span class="project-container_head_about">Transformacje stylów "keyframes" dla wielu tagów DIV i SVG, koordynowane funkcją rekurencyjną zawierającą "setTimeout".
+            </span>
+        </header>
+        <main class="project-container_main">
+            <div class="project-container_positioner">
+                <iframe src="./iframes/steam-engine/index.html"></iframe>
+                <p>Zobacz animację 'Steam-engine'</p>
+            </div>
+        </main>
+    </section>
+
+    <div class="container-for-two-project-containers">
+        <section class="project-container magic-text">
+            <header class="project-container_head">
+                <div class="project-container_head_type">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                        style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                        <path style="fill:#F26722;stroke:#F26722;stroke-width:0.8946;stroke-miterlimit:10;" d="M12.427,20.198l3.721-3.721
+	c0.066-0.066,0.121-0.138,0.168-0.216l0.46-0.46c0.078-0.046,0.151-0.102,0.216-0.168l3.721-3.721
+	c2.019,1.206,4.393,1.172,5.818-0.253c1.168-1.168,1.398-2.973,0.781-4.698c-0.667,0.724-2.267,2.45-2.267,2.45
+	c-2.625,0.794-2.64,0.74-3.801-0.422c-1.161-1.161-1.123-1.123-0.422-3.801c0,0,1.619-1.519,2.45-2.267
+	c-1.725-0.617-3.531-0.387-4.698,0.781c-1.425,1.425-1.459,3.799-0.253,5.818l-3.721,3.721c-0.066,0.066-0.121,0.138-0.168,0.216
+	l-0.46,0.46c-0.078,0.046-0.151,0.102-0.216,0.168l-3.721,3.721c-2.019-1.206-4.393-1.172-5.818,0.253
+	c-1.168,1.168-1.398,2.973-0.781,4.698c0.667-0.724,2.267-2.45,2.267-2.45c2.625-0.794,2.64-0.74,3.801,0.422
+	c1.161,1.161,1.123,1.123,0.422,3.801c0,0-1.619,1.519-2.45,2.267c1.725,0.617,3.531,0.387,4.698-0.781
+	C13.599,24.592,13.633,22.217,12.427,20.198z" />
+                    </svg>
+                    <h2>JavaScript</h2>
+                    <div class="closingBtn">X</div>
+                </div>
+                <h3 class="project-container_head_title">Dynamiczny tekst nagłówka</h3>
+                <span class="project-container_head_about">
+                    Tekst wskakuje w przygotowane wcześniej style.
+                </span>
+            </header>
+            <main class="project-container_main">
+                <div class="project-container_positioner">
+                    <iframe src="./iframes/magic-txt/index.html">
+
+                    </iframe>
+                    <p>Zobacz projekt</p>
+                </div>
+            </main>
+        </section>
+
+        <section class="project-container photo-fade">
+            <header class="project-container_head">
+                <div class="project-container_head_type">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                        style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                        <g>
+                            <path style="fill:#58439B;stroke:#58439B;stroke-width:0.5;stroke-miterlimit:10;" d="M19.165,9.551
+		c0.603-0.748,1.242-2.079,1.098-3.7c-0.22-2.476-3.482-4.452-3.189-4.03c2.259,3.251-0.892,3.523-0.672,5.999
+		c0.076,0.86,0.275,1.411,0.523,1.768c-0.725,0.189-1.266,0.846-1.266,1.627v2.917c0,0.538,0.259,1.013,0.654,1.323
+		c-0.019,0.47-0.031,0.971-0.031,1.518c0,4.959,0.831,11.264,1.856,11.264s1.856-6.305,1.856-11.264
+		c0-0.547-0.012-1.048-0.031-1.518c0.395-0.31,0.654-0.785,0.654-1.323v-2.917C20.617,10.367,19.982,9.668,19.165,9.551z" />
+                            <polygon style="fill:#58439B;stroke:#58439B;stroke-width:0.5;stroke-miterlimit:10;" points="13.226,10.337 
+		13.181,10.17 13.221,9.474 12.991,9.474 11.305,3.276 9.618,9.474 9.388,9.474 9.383,10.337 9.438,10.337 10.388,26.724 
+		12.221,26.724 13.171,10.337 	" />
+                        </g>
+                    </svg>
+                    <h2>CSS: transitions, opacity</h2>
+                    <div class="closingBtn">X</div>
+                </div>
+                <h3 class="project-container_head_title">Zdjęcie zamieniające się w szkic</h3>
+                <span class="project-container_head_about">
+                    CSS zaprzęgnięty do animacji.
+                </span>
+            </header>
+            <main class="project-container_main">
+                <div class="project-container_positioner">
+                    <iframe src="./iframes/photo-fade/index.html">
+                    </iframe>
+                    <p>Zobacz ćwiczenie</p>
+                </div>
+            </main>
+        </section>
+    </div>
+
+    <section class="project-container cv-pls-pls">
+        <header class="project-container_head">
+            <div class="project-container_head_type">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                    style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <g>
+                        <path style="fill:#58439B;stroke:#58439B;stroke-width:0.5;stroke-miterlimit:10;" d="M19.165,9.551
+            c0.603-0.748,1.242-2.079,1.098-3.7c-0.22-2.476-3.482-4.452-3.189-4.03c2.259,3.251-0.892,3.523-0.672,5.999
+            c0.076,0.86,0.275,1.411,0.523,1.768c-0.725,0.189-1.266,0.846-1.266,1.627v2.917c0,0.538,0.259,1.013,0.654,1.323
+            c-0.019,0.47-0.031,0.971-0.031,1.518c0,4.959,0.831,11.264,1.856,11.264s1.856-6.305,1.856-11.264
+            c0-0.547-0.012-1.048-0.031-1.518c0.395-0.31,0.654-0.785,0.654-1.323v-2.917C20.617,10.367,19.982,9.668,19.165,9.551z"
+                        />
+                        <polygon style="fill:#58439B;stroke:#58439B;stroke-width:0.5;stroke-miterlimit:10;" points="13.226,10.337 
+            13.181,10.17 13.221,9.474 12.991,9.474 11.305,3.276 9.618,9.474 9.388,9.474 9.383,10.337 9.438,10.337 10.388,26.724 
+            12.221,26.724 13.171,10.337 	" />
+                    </g>
+                </svg>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                    style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <g id="XMLID_1_">
+                        <path style="fill:#EE3432;stroke:#EE3432;stroke-width:0.5778;stroke-miterlimit:10;" d="M18.201,3.708H5.347
+		c-0.55,0-1,0.45-1,1v4.458c0,0.55,0.45,1,1,1h4.656v5.026c-0.386,0.139-0.667,0.5-0.667,0.932v9.167c0,0.55,0.45,1,1,1h2.875
+		c0.55,0,1-0.45,1-1v-9.167c0-0.432-0.281-0.793-0.667-0.932v-5.026h4.656c0.55,0,1-0.45,1-1V4.708
+		C19.201,4.158,18.751,3.708,18.201,3.708z" />
+                        <path style="fill:#EE3432;stroke:#EE3432;stroke-width:0.2335;stroke-miterlimit:10;" d="M24.609,15.131h-0.925
+		v-8.05h0.12l0.746-0.827l-0.746-3.046H22.39l-0.724,3.127l0.724,0.746h0.141v8.05h-0.925c-0.574,0-1.044,0.47-1.044,1.044v9.573
+		c0,0.574,0.47,1.044,1.044,1.044h3.002c0.574,0,1.044-0.47,1.044-1.044v-9.573C25.653,15.601,25.183,15.131,24.609,15.131z"
+                        />
+                    </g>
+                </svg>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                    style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <path style="fill:#F26722;stroke:#F26722;stroke-width:0.8946;stroke-miterlimit:10;" d="M12.427,20.198l3.721-3.721
+	c0.066-0.066,0.121-0.138,0.168-0.216l0.46-0.46c0.078-0.046,0.151-0.102,0.216-0.168l3.721-3.721
+	c2.019,1.206,4.393,1.172,5.818-0.253c1.168-1.168,1.398-2.973,0.781-4.698c-0.667,0.724-2.267,2.45-2.267,2.45
+	c-2.625,0.794-2.64,0.74-3.801-0.422c-1.161-1.161-1.123-1.123-0.422-3.801c0,0,1.619-1.519,2.45-2.267
+	c-1.725-0.617-3.531-0.387-4.698,0.781c-1.425,1.425-1.459,3.799-0.253,5.818l-3.721,3.721c-0.066,0.066-0.121,0.138-0.168,0.216
+	l-0.46,0.46c-0.078,0.046-0.151,0.102-0.216,0.168l-3.721,3.721c-2.019-1.206-4.393-1.172-5.818,0.253
+	c-1.168,1.168-1.398,2.973-0.781,4.698c0.667-0.724,2.267-2.45,2.267-2.45c2.625-0.794,2.64-0.74,3.801,0.422
+	c1.161,1.161,1.123,1.123,0.422,3.801c0,0-1.619,1.519-2.45,2.267c1.725,0.617,3.531,0.387,4.698-0.781
+	C13.599,24.592,13.633,22.217,12.427,20.198z" />
+                </svg>
+                <h2>CSS, HTML, JavaScript</h2>
+                <div class="closingBtn">X</div>
+            </div>
+            <h3 class="project-container_head_title">CV - nerdy style</h3>
+            <span class="project-container_head_about">Długa animacja (około 20sek) na duży ekran. Zawiera niektóre elementy prezentowane wyżej</span>
+        </header>
+        <main class="project-container_main">
+            <div class="project-container_positioner">
+                <iframe src="./iframes/cv-plus-plus/index.html"></iframe>
+                <p>Zobacz animację 'CV++'</p>
+            </div>
+        </main>
+    </section>
+
+    <div class="recomendations-temporary-positioner">
+        <section class="recomendations-container">
+            <header class="recomendations-container_head">
+                <svg width="60px" height="60px">
+                    <polyline points="0,60 60,0 45,0 0,45" fill="red"></polyline>
+                </svg>
+                <h2>rekomendacje</h2>
+            </header>
+            <main>
+                <div class="img-background-and-positioner">
+                    <img src="./media/devarmy-logo.png" height="30px" id="devarmy-logo" />
+                </div>
+                <p>"Maciek was a participant in DevArmy's course. From the very beginning I noticed that he stood out from the
+                    group. He always tried to solve all problems and find the best solution. He was very involved in developing
+                    his frontend skills, he devoted a lot of time to refining his skills at home. The results of this work
+                    were really amazing. Maciej was able to prepare advanced user interfaces after a month of work.
+                    <br>
+                    <br>I would gladly recommend him to any company that want to have talented, perspective and ambitious programmer
+                    in the team."
+                </p>
+                <span>Bartosz Kotrys - Mentor DevArmy</span>
+            </main>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <span class="author">Autor: Maciej Bartyński, 2018</span>
+        <span class="main-footer_contact">
+            <span class="tel">784 482 159</span>
+            <span class="mail">maciek.bartynski@gmail.com</span>
+        </span>
+        <div class="footer_line"></div>
+        <span>Wszystkie elementy na tej stronie (w tym grafiki, pliki SVG, kod) za wyjątkiem ikon mediów społecznościowych (LinkedIn,
+            Github) i modułów "developer dependencies" są mojego autorstwa.</span>
+        <div class="footer_line"></div>
+        <span>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie
+            z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).</span>
+        <div class="footer_line"></div>
+        <span>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment
+            process under the Personal Data Protection Act as of 29 August 1997, consolidated text: Journal of Laws 2016,
+            item 922 as amended.</span>
+    </footer>
+
+</body>
+
+</html>
