@@ -1,3 +1,5 @@
+//footer
+import './background-fixed/background.scss';
 //navi
 import './main-navi/navi.scss';
 import './main-navi/navi.js';
@@ -26,18 +28,24 @@ import './recomendations-container/recomendations.scss';
 //footer
 import './footer/footer.scss';
 'use strict';
-document.addEventListener('DOMContentLoaded', temporaryJumpPrevntion);
-let iter=0;
-function temporaryJumpPrevntion(){
+document.addEventListener('DOMContentLoaded', function () {
+    temporaryJumpPrevntion();
+    preventJumpingBackgroundInIe();
+});
+let iter = 0;
+
+function temporaryJumpPrevntion() {
     document.addEventListener('click', iterPlus);
-    function iterPlus(){
-        iter=1;
+
+    function iterPlus() {
+        iter = 1;
     }
-    setTimeout(checkIfScroolingIsNeeded,2000);
+    setTimeout(checkIfScroolingIsNeeded, 2000);
 }
-function checkIfScroolingIsNeeded(){
+
+function checkIfScroolingIsNeeded() {
     var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
-    if (iter===0){
+    if (iter === 0) {
         if (isSmoothScrollSupported === true) {
             window.scrollTo({
                 'behavior': 'smooth',
@@ -47,5 +55,17 @@ function checkIfScroolingIsNeeded(){
         } else {
             window.scrollTo(0, 0);
         }
+    }
+}
+
+function preventJumpingBackgroundInIe() {
+    if (navigator.userAgent.match(/Trident\/7\./)) {
+        let docBody = document.querySelector('body');
+        docBody.addEventListener("mousewheel", function () {
+            event.preventDefault();
+            var wheelDelta = event.wheelDelta;
+            var currentScrollPosition = window.pageYOffset;
+            window.scrollTo(0, currentScrollPosition - wheelDelta);
+        });
     }
 }

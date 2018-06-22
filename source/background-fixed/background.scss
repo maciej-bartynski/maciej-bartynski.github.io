@@ -1,0 +1,17 @@
+.page-backround-fixed-container {
+    width: 100%;
+    position: relative;
+    &::before {
+        content: ' ';
+        position: fixed; 
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(86, 16, 196, 0.3);
+        background-image: url('./../media/background-img.min.svg');
+        background-size: cover;
+        will-change: transform; 
+        z-index: -999;
+    }
+}
