@@ -52,7 +52,7 @@ function changeLangInLeftCol(x) {
     secondTitle.appendChild(span2);
     //article[first]
     let partsOfText = [
-        ['Jestem samoukiem zdeterminowanymby postawić pierwsze kroki w IT, jako', 'I am a self-taught'],
+        ['Jestem samoukiem zdeterminowanym by postawić pierwsze kroki w IT, jako', 'I am a self-taught'],
         [' Front-End Developer', ' Front-End Developer'],
         [' Zajmując się dotąd grafiką komputerową i UX designem, zetknąłem się z CSS i HTML. Technologie webowe zafascynowały mnie - to one kształtują świat i chcę w tym uczestniczyć, albo przynajmniej rozumieć ich procesy. Samodzielnie poznaję',
             ' determined to get into the tech industry. While working with graphic and UX design I came across CSS and HTML. I found web technologies extremely fascinating because they shape the world. And I want to understand the process or even more – participate in it. I am learning'
@@ -77,7 +77,7 @@ function changeLangInLeftCol(x) {
     //article[second]
     let partsOfSecondText = [
         ['Chcę rozwijać się przez wszystkie etapy ścieżki kariery', 'I want to develop my skills throughout the'],
-        [' Front-End Developera', ' Front-End Developer carrier'],
+        [' Front-End Developera', ' Front-End Developer career'],
         [' równocześnie poznając technologie Back-Endowe. Za 10 lat chcę posiadać rzetelną wiedzę', ' and at the same time learn new Back-End technologies. In 10 years I want to be a skilled'],
         [' Full-Stack Developera.', ' Full-Stack Developer.']
     ];
