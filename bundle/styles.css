@@ -1,6 +1,6 @@
 body {
   background-color: rgba(86, 16, 196, 0.3);
-  background-image: url("./../media/background-img.svg");
+  background-image: url("./../media/background-img.min.svg");
   background-repeat: repeat;
   background-attachment: fixed;
 }
