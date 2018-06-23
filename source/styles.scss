@@ -45,7 +45,6 @@ $sbetween: space-between;
     height: 297mm;
     @include row($center, $fstart);
     @include shadow();
-    //background-color: $secondcolor;
     background-color: $brandgray;
     @media only screen and (max-width: 220mm){
         height: auto;

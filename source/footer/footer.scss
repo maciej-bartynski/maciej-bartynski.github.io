@@ -2,8 +2,8 @@
     margin-top: 50vh;
     @include column ($fstart, $fstart);
     width: 100%;
-    background-color: $brandgray;
-    background-color: rgb(107, 82, 107);
+    background-color: $cssdot;
+    //background-color: rgb(107, 82, 107);
     padding: 5rem;
     @include shadow();
     @media only screen and (max-width: 220mm){
@@ -23,6 +23,7 @@
         font-weight: 200;
         width: 100%;
         font-size: 0.7rem;
+        text-align: center;
         &.author{
             color: white;
             font-size: 1rem;

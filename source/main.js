@@ -25,6 +25,7 @@ import './project-containers/cvPlusPlus-container/cvPlusPlus-container.scss';
 import './project-containers/cvPlusPlus-container/cvPlusPlus-container.js';
 //reccomend
 import './recomendations-container/recomendations.scss';
+import './recomendations-container/recomendation.js';
 //footer
 import './footer/footer.scss';
 'use strict';
