@@ -1528,6 +1528,11 @@ nav.language-nav ul li.active {
 .recomendations-temporary-positioner {
   margin: 50px auto;
   width: 210mm;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 220mm) {
@@ -1537,7 +1542,8 @@ nav.language-nav ul li.active {
 }
 
 .recomendations-temporary-positioner .recomendations-container {
-  width: 50%;
+  position: relative;
+  width: 49%;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -1552,24 +1558,40 @@ nav.language-nav ul li.active {
   .recomendations-temporary-positioner .recomendations-container {
     width: 100%;
   }
+  .recomendations-temporary-positioner .recomendations-container:nth-of-type(2) {
+    margin-top: 5px;
+  }
 }
 
 .recomendations-temporary-positioner .recomendations-container header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
-  margin: 0, 0, 0.5rem, 0;
+  align-items: flex-start;
+  margin: 0 0 2rem 0;
   width: 100%;
 }
 
 .recomendations-temporary-positioner .recomendations-container header h2 {
+  align-self: flex-end;
   margin: 0;
   padding: 0;
   color: #37A4DC;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-family: sans-serif;
+}
+
+.recomendations-temporary-positioner .recomendations-container .img-background-and-positioner {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #5D5D5D;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .recomendations-temporary-positioner .recomendations-container main {
@@ -1579,24 +1601,14 @@ nav.language-nav ul li.active {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  margin: 0, 0, 2rem, 0;
+  margin-bottom: 7rem;
 }
 
 @media only screen and (max-width: 220mm) {
   .recomendations-temporary-positioner .recomendations-container main {
     padding: 0.5rem;
+    margin-bottom: 9rem;
   }
-}
-
-.recomendations-temporary-positioner .recomendations-container main .img-background-and-positioner {
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  background-color: #5D5D5D;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .recomendations-temporary-positioner .recomendations-container main p {
@@ -1604,27 +1616,40 @@ nav.language-nav ul li.active {
   color: #5D5D5D;
   font-family: sans-serif;
   line-height: 2rem;
+  margin: 0;
 }
 
-.recomendations-temporary-positioner .recomendations-container main span {
-  width: 100%;
-  text-align: right;
-  color: #37A4DC;
-  font-weight: 700;
-  font-family: sans-serif;
-  margin: 2rem 0;
-}
-
-.recomendations-temporary-positioner .recomendations-container main .recomendations_see-profile-or-see-organization {
+.recomendations-temporary-positioner .recomendations-container .recomendations_see-profile-or-see-organization {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 2rem 1rem 2rem;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  border-top: 1px solid #5D5D5D;
+  flex-wrap: wrap;
 }
 
-.recomendations-temporary-positioner .recomendations-container main .recomendations_see-profile-or-see-organization .recomendations_see-profile-or-see-organization_svg-container {
+@media only screen and (max-width: 220mm) {
+  .recomendations-temporary-positioner .recomendations-container .recomendations_see-profile-or-see-organization {
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+}
+
+.recomendations-temporary-positioner .recomendations-container .recomendations_see-profile-or-see-organization span {
+  border-top: 1px solid #5D5D5D;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  color: #37A4DC;
+  font-weight: 700;
+  font-family: sans-serif;
+  padding: 1rem 0;
+}
+
+.recomendations-temporary-positioner .recomendations-container .recomendations_see-profile-or-see-organization .recomendations_see-profile-or-see-organization_svg-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -1633,7 +1658,7 @@ nav.language-nav ul li.active {
   cursor: pointer;
 }
 
-.recomendations-temporary-positioner .recomendations-container main .recomendations_see-profile-or-see-organization .recomendations_see-profile-or-see-organization_svg-container svg {
+.recomendations-temporary-positioner .recomendations-container .recomendations_see-profile-or-see-organization .recomendations_see-profile-or-see-organization_svg-container svg {
   border: 1px solid #5D5D5D;
   border-radius: 20px;
   width: 20px;
@@ -1641,7 +1666,7 @@ nav.language-nav ul li.active {
   margin: 5px;
 }
 
-.recomendations-temporary-positioner .recomendations-container main .recomendations_see-profile-or-see-organization .recomendations_see-profile-or-see-organization_svg-container div.btn-label {
+.recomendations-temporary-positioner .recomendations-container .recomendations_see-profile-or-see-organization .recomendations_see-profile-or-see-organization_svg-container div.btn-label {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -1651,7 +1676,7 @@ nav.language-nav ul li.active {
   opacity: 0;
 }
 
-.recomendations-temporary-positioner .recomendations-container main .recomendations_see-profile-or-see-organization .recomendations_see-profile-or-see-organization_svg-container:hover div.btn-label {
+.recomendations-temporary-positioner .recomendations-container .recomendations_see-profile-or-see-organization .recomendations_see-profile-or-see-organization_svg-container:hover div.btn-label {
   display: flex;
   opacity: 1;
   margin: 0;

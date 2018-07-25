@@ -756,18 +756,18 @@
         </main>
     </section>
 
-    <div class="recomendations-temporary-positioner" id="b-kotrys">
-        <section class="recomendations-container">
+    <div class="recomendations-temporary-positioner">
+        <section class="recomendations-container" id="b-kotrys">
             <header class="recomendations-container_head">
                 <svg width="60px" height="60px">
                     <polyline points="0,60 60,0 45,0 0,45" fill="red"></polyline>
                 </svg>
                 <h2>rekomendacje</h2>
             </header>
+            <div class="img-background-and-positioner">
+                <img src="./media/devarmy-logo.png" height="30px" id="devarmy-logo" />
+            </div>
             <main>
-                <div class="img-background-and-positioner">
-                    <img src="./media/devarmy-logo.png" height="30px" id="devarmy-logo" />
-                </div>
                 <p>"Maciek was a participant in DevArmy's course. From the very beginning I noticed that he stood out from the
                     group. He always tried to solve all problems and find the best solution. He was very involved in developing
                     his frontend skills, he devoted a lot of time to refining his skills at home. The results of this work
@@ -776,31 +776,73 @@
                     <br>I would gladly recommend him to any company that want to have talented, perspective and ambitious programmer
                     in the team."
                 </p>
-                <span>Bartosz Kotrys - Mentor DevArmy</span>
-                <div class="recomendations_see-profile-or-see-organization">
-                    <div class="recomendations_see-profile-or-see-organization_svg-container profile">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                            <path d="M20.583 10.25c0 2.899-2.5 6.25-5.583 6.25s-5.583-3.351-5.583-6.25S11.917 5 15 5s5.583 2.35 5.583 5.25zM15 28.583c4.371 0 8.249-2.073 10.733-5.28.005.065.017.133.017.197 0-2.435-3.4-5.884-8.005-6.93-.811.575-1.746.93-2.745.93s-1.934-.355-2.745-.929C7.65 17.616 4.25 21.065 4.25 23.5c0-.064.012-.131.017-.197 2.484 3.207 6.362 5.28 10.733 5.28z"
-                                fill="#5d5d5d" stroke="#fff" stroke-miterlimit="10" />
-                            <circle cx="15" cy="15" r="13.583" fill="none" stroke="#5d5d5d" stroke-width=".949" stroke-miterlimit="10" />
-                        </svg>
-                        <div class="btn-label">zobacz profil</div>
-                    </div>
-                    <div class="recomendations_see-profile-or-see-organization_svg-container organization">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                            <circle cx="15" cy="15" r="13.583" fill="none" stroke="#5d5d5d" stroke-width=".949" stroke-miterlimit="10"
-                            />
-                            <path d="M23.781 14.119h-.031v-.41h-3.833v.41h-3v-.41h-3.833v.41h-3v-.41H6.25v9.542h3.833v-5.783c.168-.607.764-1.058 1.479-1.058.81 0 1.467.578 1.521 1.308v5.533h3.833v-5.439h.021c0-.775.686-1.403 1.531-1.403.678 0 1.247.407 1.448.966v5.875h3.833v-5.439h.031v-3.692zM5.803 13.66c-.778-.778-.778-1.051 0-1.828l7.586-7.586a2.005 2.005 0 0 1 2.828 0l7.604 7.604c.778.778.778 1.051 0 1.828L5.803 13.66z"
-                                fill="#5d5d5d" />
-                            <path fill="none" stroke="#5d5d5d" stroke-miterlimit="10" d="M5.625 22.375h18.75v.438H5.625z"
-                            />
-                            <path d="M25.914 23.063H4.086c.108.146.213.296.327.438h21.173c.115-.143.219-.292.328-.438z" fill="none"
-                                stroke="#5d5d5d" stroke-width=".949" stroke-miterlimit="10" />
-                        </svg>
-                        <div class="btn-label">zobacz organizację</div>
-                    </div>
-                </div>
             </main>
+            <div class="recomendations_see-profile-or-see-organization">
+                <span>Bartosz Kotrys - Mentor DevArmy</span>
+                <div class="recomendations_see-profile-or-see-organization_svg-container profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <path d="M20.583 10.25c0 2.899-2.5 6.25-5.583 6.25s-5.583-3.351-5.583-6.25S11.917 5 15 5s5.583 2.35 5.583 5.25zM15 28.583c4.371 0 8.249-2.073 10.733-5.28.005.065.017.133.017.197 0-2.435-3.4-5.884-8.005-6.93-.811.575-1.746.93-2.745.93s-1.934-.355-2.745-.929C7.65 17.616 4.25 21.065 4.25 23.5c0-.064.012-.131.017-.197 2.484 3.207 6.362 5.28 10.733 5.28z"
+                            fill="#5d5d5d" stroke="#fff" stroke-miterlimit="10" />
+                        <circle cx="15" cy="15" r="13.583" fill="none" stroke="#5d5d5d" stroke-width=".949" stroke-miterlimit="10" />
+                    </svg>
+                    <div class="btn-label">zobacz profil</div>
+                </div>
+                <div class="recomendations_see-profile-or-see-organization_svg-container organization">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <circle cx="15" cy="15" r="13.583" fill="none" stroke="#5d5d5d" stroke-width=".949" stroke-miterlimit="10" />
+                        <path d="M23.781 14.119h-.031v-.41h-3.833v.41h-3v-.41h-3.833v.41h-3v-.41H6.25v9.542h3.833v-5.783c.168-.607.764-1.058 1.479-1.058.81 0 1.467.578 1.521 1.308v5.533h3.833v-5.439h.021c0-.775.686-1.403 1.531-1.403.678 0 1.247.407 1.448.966v5.875h3.833v-5.439h.031v-3.692zM5.803 13.66c-.778-.778-.778-1.051 0-1.828l7.586-7.586a2.005 2.005 0 0 1 2.828 0l7.604 7.604c.778.778.778 1.051 0 1.828L5.803 13.66z"
+                            fill="#5d5d5d" />
+                        <path fill="none" stroke="#5d5d5d" stroke-miterlimit="10" d="M5.625 22.375h18.75v.438H5.625z" />
+                        <path d="M25.914 23.063H4.086c.108.146.213.296.327.438h21.173c.115-.143.219-.292.328-.438z" fill="none" stroke="#5d5d5d"
+                            stroke-width=".949" stroke-miterlimit="10" />
+                    </svg>
+                    <div class="btn-label">zobacz organizację</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recomendations-container" id="g-dawidko">
+            <header class="recomendations-container_head">
+                <svg width="60px" height="60px">
+                    <polyline points="0,60 60,0 45,0 0,45" fill="red"></polyline>
+                </svg>
+                <h2>rekomendacje</h2>
+            </header>
+            <div class="img-background-and-positioner">
+                <img src="./media/devarmy-logo.png" height="30px" id="devarmy-logo" />
+            </div>
+            <main>
+                <p>"I met Maciej during a Front-End developer course and was particularly impressed by his ability to swiftly
+                    grasp web development paradigms. By the end of the training Maciej was able to turn any required design
+                    into code. What's impressing is his dedication - websites done in his spare time are outstanding and
+                    industry level.
+                    <br>
+                    <br>He's a passionate who shows understanding of JavaScript on the top of HTML &amp; CSS. I can honestly recommend
+                    Maciej for any frontend developer position."
+                </p>
+            </main>
+            <div class="recomendations_see-profile-or-see-organization">
+                <span>Grzegorz Dawidko - Mentor DevArmy</span>
+                <div class="recomendations_see-profile-or-see-organization_svg-container profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <path d="M20.583 10.25c0 2.899-2.5 6.25-5.583 6.25s-5.583-3.351-5.583-6.25S11.917 5 15 5s5.583 2.35 5.583 5.25zM15 28.583c4.371 0 8.249-2.073 10.733-5.28.005.065.017.133.017.197 0-2.435-3.4-5.884-8.005-6.93-.811.575-1.746.93-2.745.93s-1.934-.355-2.745-.929C7.65 17.616 4.25 21.065 4.25 23.5c0-.064.012-.131.017-.197 2.484 3.207 6.362 5.28 10.733 5.28z"
+                            fill="#5d5d5d" stroke="#fff" stroke-miterlimit="10" />
+                        <circle cx="15" cy="15" r="13.583" fill="none" stroke="#5d5d5d" stroke-width=".949" stroke-miterlimit="10" />
+                    </svg>
+                    <div class="btn-label">zobacz profil</div>
+                </div>
+                <div class="recomendations_see-profile-or-see-organization_svg-container organization">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <circle cx="15" cy="15" r="13.583" fill="none" stroke="#5d5d5d" stroke-width=".949" stroke-miterlimit="10" />
+                        <path d="M23.781 14.119h-.031v-.41h-3.833v.41h-3v-.41h-3.833v.41h-3v-.41H6.25v9.542h3.833v-5.783c.168-.607.764-1.058 1.479-1.058.81 0 1.467.578 1.521 1.308v5.533h3.833v-5.439h.021c0-.775.686-1.403 1.531-1.403.678 0 1.247.407 1.448.966v5.875h3.833v-5.439h.031v-3.692zM5.803 13.66c-.778-.778-.778-1.051 0-1.828l7.586-7.586a2.005 2.005 0 0 1 2.828 0l7.604 7.604c.778.778.778 1.051 0 1.828L5.803 13.66z"
+                            fill="#5d5d5d" />
+                        <path fill="none" stroke="#5d5d5d" stroke-miterlimit="10" d="M5.625 22.375h18.75v.438H5.625z" />
+                        <path d="M25.914 23.063H4.086c.108.146.213.296.327.438h21.173c.115-.143.219-.292.328-.438z" fill="none" stroke="#5d5d5d"
+                            stroke-width=".949" stroke-miterlimit="10" />
+                    </svg>
+                    <div class="btn-label">zobacz organizację</div>
+                </div>
+            </div>
         </section>
     </div>
 
