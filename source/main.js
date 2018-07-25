@@ -30,34 +30,8 @@ import './recomendations-container/recomendation.js';
 import './footer/footer.scss';
 'use strict';
 document.addEventListener('DOMContentLoaded', function () {
-    temporaryJumpPrevntion();
     preventJumpingBackgroundInIe();
 });
-let iter = 0;
-
-function temporaryJumpPrevntion() {
-    document.addEventListener('click', iterPlus);
-
-    function iterPlus() {
-        iter = 1;
-    }
-    setTimeout(checkIfScroolingIsNeeded, 2000);
-}
-
-function checkIfScroolingIsNeeded() {
-    var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
-    if (iter === 0) {
-        if (isSmoothScrollSupported === true) {
-            window.scrollTo({
-                'behavior': 'smooth',
-                'left': 0,
-                'top': 0
-            });
-        } else {
-            window.scrollTo(0, 0);
-        }
-    }
-}
 
 function preventJumpingBackgroundInIe() {
     if (navigator.userAgent.match(/Trident\/7\./)) {

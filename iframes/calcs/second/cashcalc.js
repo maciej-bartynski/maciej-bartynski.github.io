@@ -10,8 +10,6 @@ var values = ["złoty", "dolar", "euro", "frank"];
 ////////////////////////////////////////////
 /* inicjuje wszystko, co wymaga drzewa DOM */
 document.addEventListener("DOMContentLoaded", function init() {
-  console.log("works"); //potwierdzenie załadowania DOM
-
   //elementy HTML kalkulatora
   var inputField = document.querySelector("#input");
   var outputField = document.querySelector("#output");
