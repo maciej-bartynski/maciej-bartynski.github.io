@@ -1699,18 +1699,6 @@ nav.language-nav ul li.active {
   height: auto;
 }
 
-/*
-<div class="recomendations_see-profile-or-see-organization">
-                    <div class="recomendations_see-profile-or-see-organization_svg-container">
-                        <svg></svg>
-                        <span>zobacz profil</span>
-                    </div>
-                    <div class="recomendations_see-profile-or-see-organization_first-svg-container">
-                        <svg></svg>
-                        <span>zobacz organizację</span>
-                    </div>
-                </div>
-                */
 .main-footer {
   margin-top: 50vh;
   display: flex;

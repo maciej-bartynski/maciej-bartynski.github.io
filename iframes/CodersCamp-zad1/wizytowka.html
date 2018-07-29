@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wizytówka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Maciej Bartyński">
+    <meta name="description" content="Zadanie wstępne na CodersCamp 2018, dzień 1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700&amp;subset=latin-ext" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=latin-ext" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+    <script src="magic.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bground"></div>
+        <div class="container">
+            <img src='media/photo_square.jpg' alt="my photo" />
+            <p id="author">Maciej
+                <span>Bartyński</span>
+            </p>
+            <p id="motto"></p>
+            <div class="icon-positioner">
+                <i class="fab fa-linkedin-in top" id="lin"></i>   
+                <i class="fab fa-github right" id="git"></i>
+                <i class="fas fa-drafting-compass left" id="por"></i>
+            </div>
+        </div>
+        <div class="sidebox">
+            <p class="title">How it works:</p>
+            <p class="btnhead">Paralax effect</p>
+            <div class="article" id="paralax">
+                <p>Pure JavaScript, event: mousemove. On the event:</p>
+                <p class="info">var x = event.clientX:
+                    <span id="x">23</span>
+                </p>
+                <p class="info">var y = event.clientY:
+                    <span id="y">23</span>
+                </p>
+                <p>Scale:</p>
+                <p class="info">scaleX = window.innerWidth divide by 10:
+                    <span id="scaleX">23</span>
+                </p>
+                <p class="info">scaleY = window.innerHeight divide by 10:
+                    <span id="scaleY">23</span>
+                </p>
+                <p>Background is inside a wrapper element (overflow: hidden). B-ground position: absolute, initial top: -10px,
+                    initial left: -10px. On event:</p>
+                <p class="info">newLeft = x/scaleX:
+                    <span id="newleft">23</span>
+                </p>
+                <p class="info">newTop = y/scaleY:
+                    <span id="newtop">23</span>
+                </p>
+            </div>
+            <p class="btnhead">Dynamic text</p>
+            <div class="article" id="dynamictxt">
+                <p>Pure JavaScript, event: DOMContentLoaded. Press button to simulate the event:</p>
+                <div id="domcontentload">show me</div>
+                <p id="a">i =
+                    <span class="outp" id="iterator">0</span>
+                </p>
+                <p id="b">array = ['m','y','t','e','x','t']</p>
+                <p id="c">array[i] =
+                    <span class="outp" id="char">'m'</span>
+                </p>
+                <p id="d">object.innerText =
+                    <span class="outp" id="inn"></span>
+                </p>
+                <p id="e">i++</p>
+                <p id="f">setTimeout(
+                    <span class="outp" id="call">addLetter </span>
+                    <i class="fas fa-hourglass"></i>)
+                </p>
+            </div>
+            <div class="button">
+                <i class="fas fa-angle-right fonticon"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!--https://app.ludus.one/9f38537f-1575-4dfd-8b43-47b808c9418a-->
