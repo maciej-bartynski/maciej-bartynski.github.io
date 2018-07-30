@@ -17,9 +17,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+@media only screen and (max-width: 310px){
+  .mobile {
+    height: 1080px;
+  }
+}
 .bground {
-  width: 110vw;
+  min-width: 110vw;
   height: 110vh;
   position: absolute;
   top: -10px;
@@ -40,7 +44,7 @@ body {
   color: white;
   background-color: rgba(4, 0, 24, 0.9);
   height: 120vh;
-  min-width: 300px;
+  padding: 0 4vh 0 4vh;
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
@@ -49,22 +53,25 @@ body {
   text-align: center;
 }
 .container > img {
-  width: 200px;
-  height: 200px;
+  width: 20vh;
+  height: 20vh;
   border: solid 3px white;
-  border-radius: 200px;
-  margin: 20vh 0 40px 0;
+  border-radius: 20vh;
+  margin: 20vh 0 10vh 0;
 }
 .container p:nth-of-type(1) {
-  font-size: 25px;
+  font-size: 2.7vh;
+  line-height: 3vh;
   letter-spacing: 3px;
+  margin: 0 0 2.5vh 0;
 }
 
 .container p:nth-of-type(2) {
-  font-size: 15px;
+  font-size: 2vh;
   text-transform: uppercase;
   letter-spacing: 3px;
-  line-height: 200%;
+  line-height: 3vh;
+  margin: 0;
 }
 
 .container p span {
@@ -72,23 +79,25 @@ body {
 }
 
 .icon-positioner {
-  width: 120px;
-  height: 120px;
   display: flex;
+  opacity: 0;
+  position: relative;
   justify-content: center;
   align-items: center;
-  position: relative;
   margin-top: 10vh;
   animation: magicTriangle 1000ms ease;
   animation-fill-mode: forwards;
   animation-delay: 3000ms;
-  opacity: 0;
 }
 @keyframes magicTriangle {
   from{
+    width: 10vh;
+    height: 10vh;
     transform: translate(0, 0);
     opacity: 0;
   }to{
+    width: 12vh;
+    height: 12vh;
     transform: translate(0, -20px);
     opacity: 1;
   }
@@ -101,11 +110,12 @@ body {
   align-items: center;
   border: solid 1px white;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 3vh;
+  height: 3vh;
   position: absolute;
   transition: all 400ms ease;
   cursor: pointer;
+  font-size: 1.6vh;
 }
 .icon-positioner i:hover{
   background-color: rgba(255, 255, 255, 0.3);
@@ -113,20 +123,20 @@ body {
 }
 .top {
   top: 0;
-  left: 45px;
+  left: 4.5vh;
 }
 .right {
-  top: 90px;
-  left: 90px;
+  top: 9vh;
+  left: 9vh;
 }
 .left {
-  top: 90px;
+  top: 9vh;
   left: 0;
 }
 .button {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
+  min-width: 4vw;
+  min-height: 4vw;
+  border-radius: 4vw;
   background-color: rgba(4, 0, 24, 0.9);
   position: absolute;
   margin-top: -20px;
@@ -146,13 +156,25 @@ body {
   border-radius: 0px;
   background-color: rgba(12, 6, 43, 0.9);
 }
+@media only screen and (max-width:310px) {
+  .button {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(22, 0, 133, 0.9);
+  }
+}
+@media only screen and (max-width:310px) {
+  .isClicked {
+    left: 80%;
+  }
+}
 
 .button:hover {
   background-color: rgba(22, 13, 68, 0.9);
 }
 
 .fonticon {
-  font-size: 30px;
+  font-size: 2vh;
   transition: all 600ms;
   display: flex;
   justify-content: center;
@@ -167,17 +189,23 @@ body {
   background-color: rgba(4, 0, 24, 0.9);
   width: 310px;
   color: white;
-  position: fixed;
-  bottom: 0px;
+  position: absolute;
+  top: 0px;
   left: -310px;
   z-index: 2;
-  padding: 30px;
-  height: 100vh;
+  padding: 3vh;
+  height: 1080px;
   transition: left 200ms;
 }
-
+@media only screen and (max-width:310px) {
+  .sidebox{
+    width: 100%;
+  }
+}
 .sidebox .title {
-  font-size: 16px;
+  font-size: 2vh;
+  margin: 0 0 1vh 0;
+  line-height: 2vh;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -185,21 +213,26 @@ body {
 
 .article {
   width: 250px;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   transition: all 200ms ease;
 }
+@media only screen and (max-width:310px) {
+  .article {
+    width: 90%;
+  }
+}
 .sidebox > .isActive {
-  height: 70vh;
+  max-height: 1080px;
 }
 
 .btnhead {
   text-transform: uppercase;
   border-top: solid 1px gray;
   border-bottom: solid 1px gray;
-  font-size: 12px;
+  font-size: 1.2vh;
+  line-height: 2.5vh;
   letter-spacing: 1px;
-  line-height: 200%;
   cursor: pointer;
 }
 .btnhead:hover {
@@ -207,7 +240,7 @@ body {
 }
 
 .article > p {
-  font-size: 12px;
+  font-size: 1.1vh;
   letter-spacing: 1px;
   line-height: 200%;
 }

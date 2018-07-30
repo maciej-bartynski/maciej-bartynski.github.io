@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Wizytówka</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Maciej Bartyński">
@@ -43,18 +43,18 @@
                     <span id="y">23</span>
                 </p>
                 <p>Scale:</p>
-                <p class="info">scaleX = window.innerWidth divide by 10:
+                <p class="info">scaleX = window.innerWidth divide by 100:
                     <span id="scaleX">23</span>
                 </p>
-                <p class="info">scaleY = window.innerHeight divide by 10:
+                <p class="info">scaleY = window.innerHeight divide by 100:
                     <span id="scaleY">23</span>
                 </p>
                 <p>Background is inside a wrapper element (overflow: hidden). B-ground position: absolute, initial top: -10px,
                     initial left: -10px. On event:</p>
-                <p class="info">newLeft = x/scaleX:
+                <p class="info">newLeft = initial - x/scaleX:
                     <span id="newleft">23</span>
                 </p>
-                <p class="info">newTop = y/scaleY:
+                <p class="info">newTop = initial - y/scaleY:
                     <span id="newtop">23</span>
                 </p>
             </div>

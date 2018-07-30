@@ -27,17 +27,21 @@ function btnsInsideAsideBar(){
 
 function paralax() {
     window.addEventListener('mousemove', function (e) {
+        let bg = document.querySelector('.bground');
+        let initialTop = -10;
+        let initialLeft = -10;
+        
         let x = e.clientX;
         let y = e.clientY;
         let vw = window.innerWidth;
         let vh = window.innerHeight;
-        let dividerX = vw / 10;
-        let dividerY = vh / 10;
-        let pointPosX = Math.floor(x / dividerX);
-        let pointPosY = Math.floor(y / dividerY);
-        let bg = document.querySelector('.bground');
-        bg.style.left = (-10) - pointPosX + 'px';
-        bg.style.top = (-10) - pointPosY + 'px';
+        let dividerX = vw / 100;
+        let dividerY = vh / 100;
+        let pointPosX = (Math.floor(x / dividerX)) / 10;
+        let pointPosY = (Math.floor(y / dividerY)) / 10;
+        
+        bg.style.left = -10 - pointPosX + 'px';
+        bg.style.top = -10 - pointPosY + 'px';
         infoAboutParalax(x, y, dividerX, dividerY, pointPosX, pointPosY);
         containerMoveOpposite(x, y, dividerX, dividerY, pointPosX, pointPosY);
     });
@@ -66,10 +70,12 @@ function btnToAsideBar() {
     let btn = document.querySelector('.button');
     let sidebar = document.querySelector('.sidebox');
     let fonticon = document.querySelector('.fonticon');
+    let wrapper = document.querySelector('.wrapper');
     btn.addEventListener('click', function () {   
         btn.classList.toggle('isClicked');
         sidebar.classList.toggle('isHidden');
         fonticon.classList.toggle('rotation');
+        wrapper.classList.toggle('mobile');
     });
 }
 
