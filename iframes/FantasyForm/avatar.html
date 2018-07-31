@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fantasy Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="build/styles.css" />
+    <script src="build/script.js"></script>
+</head>
+
+<body>
+    <header class="head">
+        <h1>Kaprys bogów - karta postaci</h1>
+    </header>
+    <aside class="aside-info">
+        <div class="aside-head">
+            <div class="aside-head_orn-a a">
+                <img src="icons/pole.1.svg" />
+            </div>
+            <div class="aside-head_orn-title">
+
+            </div>
+            <div class="aside-head_orn-a b">
+                <img src="icons/pole.1.svg" />
+            </div>
+        </div>
+        <div class="aside-body">
+            <span class="aside-body_how-much">Pozostało 20x</span>
+            <img src="icons/ikona-poteg.svg" />
+        </div>
+        <div class="aside-foot">
+            <p class="aside-foot_title">Tożsamość</p>
+            <p class="user-guide">
+                Gdy wpiszesz imię, przydomek i zawołanie, po zatwierdzeniu zmian pojawi się następna część formularza.
+            </p>
+            <p class="user-guide_hide">
+                schowaj
+            </p>
+        </div>
+        <div class="aside-head">
+            <div class="aside-head_orn-a a">
+                <img src="icons/pole.1.svg" />
+            </div>
+            <div class="aside-head_orn-title">
+            </div>
+            <div class="aside-head_orn-a b">
+                <img src="icons/pole.1.svg" />
+            </div>
+        </div>
+    </aside>
+    <main class="corpus">
+        <section class="corpus_section">
+            <form class="corpus_section_form" target="_blank">
+                <h2>Twój bohater</h2>
+                <img class="corpus_section_form_ornament-top" src="icons/ornament-gorny.svg">
+                <div class="corpus_section_form_field-A">
+                    <fieldset class="corpus_section_form_fieldset-a">
+                        <legend>
+                            <div class="legend-of-field">
+                                <div class="in-legend">1</div>
+                                <div class="in-leg-txt">Tożsamość</div>
+                                <img class="in-leg-ico" src="icons/flaga.svg">
+                            </div>
+                        </legend>
+                        <div class="corpus_section_form_fieldset-a_container">
+                            <div class="corpus_section_form_fieldset-a_container_inp-lab-container">
+                                <label for="imie">Imię</label>
+                                <input type="text" name="imie" id="imie" placeholder="Heros" onfocus="this.placeholder=''" onblur="this.placeholder='Heros'"
+                                />
+                            </div>
+                            <div class="corpus_section_form_fieldset-a_container_inp-lab-container">
+                                <label for="przydomek">Przydomek</label>
+                                <input type="text" name="przydomek" id="przydomek" placeholder="Wojenny Pies" onfocus="this.placeholder=''" onblur="this.placeholder='Wojenny Pies'"
+                                />
+                            </div>
+                            <div class="corpus_section_form_fieldset-a_container_inp-lab-container">
+                                <label for="zawolanie">Zawołanie</label>
+                                <input name="zawolanie" id="zawolanie" placeholder="Zawsze wierny" onfocus="this.placeholder=''" onblur="this.placeholder='Zawsze wierny'"
+                                />
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="corpus_section_form_field-A_btn-belt">
+                        <div class="corpus_section_form_field-A_btn-belt_btn-positioner firstSectionBtn itIsHidden">
+                            <div class="corpus_section_form_field-A_btn-belt_btn-positioner_btn">
+                                Zatwierdzam
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="corpus_section_form_ornament-marker" src="icons/ornament-gorny.svg" />
+                <div class="corpus_section_form_fields itIsHidden">
+                    <fieldset class="corpus_section_form_fields_fieldset-b a">
+                        <legend>
+                            <div class="legend-of-field">
+                                <div class="in-legend">2</div>
+                                <div class="in-leg-txt">Klasa</div>
+                                <img class="in-leg-ico" src="icons/flaga.svg">
+                            </div>
+                        </legend>
+                        <div class="corpus_section_form_fields_fieldset-b_container">
+                            <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container">
+                                <label for="brutal">Brutal</label>
+                                <input type="radio" name="klasa" value="brutal" id="brutal" />
+                                <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container_img-cont">
+                                    <img src="icons/herosA.svg" alt="warrior icon" />
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container">
+                                <label for="strzelec">Strzelec</label>
+                                <input type="radio" name="klasa" value="strzelec" id="strzelec" />
+                                <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container_img-cont">
+                                    <img src="icons/herosB.svg" alt="warrior icon" />
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container">
+                                <label for="zdrajca">Zdrajca</label>
+                                <input type="radio" name="klasa" value="zdrajca" id="zdrajca" />
+                                <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container_img-cont">
+                                    <img src="icons/herosC.svg" alt="warrior icon" />
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container">
+                                <label for="szaleniec">Szaleniec</label>
+                                <input type="radio" name="klasa" value="szaleniec" id="szaleniec" />
+                                <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container_img-cont">
+                                    <img src="icons/herosE.svg" alt="warrior icon" />
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container">
+                                <label for="szarlatan">Szarlatan</label>
+                                <input type="radio" name="klasa" value="szarlatan" id="szarlatan" />
+                                <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container_img-cont">
+                                    <img src="icons/herosD.svg" alt="warrior icon" />
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container">
+                                <label for="wsciekly">Wściekły Karzeł</label>
+                                <input type="radio" name="klasa" value="wsciekly" id="wsciekly" />
+                                <div class="corpus_section_form_fields_fieldset-b_container_radio-lab-container_img-cont">
+                                    <img src="icons/herosF.svg" alt="warrior icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="corpus_section_form_field-A_btn-belt">
+                            <div class="corpus_section_form_field-A_btn-belt_btn-positioner secondSectionBtn itIsHidden">
+                                <div class="corpus_section_form_field-A_btn-belt_btn-positioner_btn">
+                                    Zatwierdzam
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="corpus_section_form_fields_fieldset-b a itIsHidden">
+                        <legend>
+                            <div class="legend-of-field">
+                                <div class="in-legend">3</div>
+                                <div class="in-leg-txt">Podstawowe uderzenie</div>
+                                <img class="in-leg-ico" src="icons/flaga.svg">
+                            </div>
+                        </legend>
+                        <div class="corpus_section_form_fields_fieldset-b_container">
+                            <div class="corpus_section_form_fields_fieldset-b_container_select-container">
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_select-list">
+                                    <select name="uderzenie" size="3">
+                                        <option>Brutalne</option>
+                                        <option>Nieprzewidywalne</option>
+                                        <option>Wyćwiczone</option>
+                                    </select>
+                                </div>
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container">
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-barba.svg" alt="icon"/>
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon"/>
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon"/>
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon"/>
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-barba.svg" alt="icon"/>
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon"/>
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-wod.svg" alt="icon"/>
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zmiana.svg" alt="icon"/>
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zywia.svg" alt="icon"/>
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-rozklad.svg" alt="icon"/>
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-barba.svg" alt="icon"/>
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-barba.svg" alt="icon"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields_fieldset-b_container_select-container">
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_select-list">
+                                    <select name="uderzenie" size="3">
+                                        <option>Niezawodne</option>
+                                        <option>Wymierzone</option>
+                                        <option>Zmasowane</option>
+                                    </select>
+                                </div>
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container">
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-strz.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-wod.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-wod.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-strz.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-wod.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zmiana.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-strz.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-strz.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields_fieldset-b_container_select-container">
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_select-list">
+                                    <select name="uderzenie" size="3">
+                                        <option>Podstepne</option>
+                                        <option>Wyrachowane</option>
+                                        <option>Zdradzieckie</option>
+                                    </select>
+                                </div>
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container">
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-zdra.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-rozklad.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-rozklad.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-zdra.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-rozklad.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zywia.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zmiana.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-zdra.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-zdra.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields_fieldset-b_container_select-container">
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_select-list">
+                                    <select name="uderzenie" size="3">
+                                        <option>Szaleńcze</option>
+                                        <option>Eksperymentalne</option>
+                                        <option>Niepowstrzymane</option>
+                                    </select>
+                                </div>
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container">
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-szal.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-szal.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zmiana.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zywia.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-szal.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-szal.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields_fieldset-b_container_select-container">
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_select-list">
+                                    <select name="uderzenie" size="3">
+                                        <option>Władcze</option>
+                                        <option>Mroczne</option>
+                                        <option>Tajemne</option>
+                                    </select>
+                                </div>
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container">
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-czar.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zmiana.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zmiana.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-czar.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-rozklad.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zmiana.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zywia.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-wod.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-czar.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner empty">
+                                            <img src="icons/ikona-poteg.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner empty">
+                                            <img src="icons/ikona-poteg.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner empty">
+                                            <img src="icons/ikona-poteg.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner empty">
+                                            <img src="icons/ikona-poteg.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields_fieldset-b_container_select-container">
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_select-list">
+                                    <select size="3">
+                                        <option>Wściekłe</option>
+                                        <option>Opetane</option>
+                                        <option>Złośliwe</option>
+                                    </select>
+                                </div>
+                                <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container">
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-szal.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-szal.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-szal.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/bron-szal.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner empty">
+                                            <img src="icons/ikona-poteg.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-wod.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zmiana.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zywia.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-rozklad.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt">
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-ogien.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zmiana.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-zywia.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-rozklad.svg" alt="icon">
+                                        </div>
+                                        <div class="corpus_section_form_fields_fieldset-b_container_select-container_img-part-container_opt_img-positioner">
+                                            <img src="icons/zyw-wod.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="corpus_section_form_field-A_btn-belt">
+                            <div class="corpus_section_form_field-A_btn-belt_btn-positioner thirdSectionBtn itIsHidden">
+                                <div class="corpus_section_form_field-A_btn-belt_btn-positioner_btn">
+                                    Zatwierdzam
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="corpus_section_form_fields_fieldset-b itIsHidden fourth">
+                        <legend>
+                            <div class="legend-of-field">
+                                <div class="in-legend">4</div>
+                                <div class="in-leg-txt">To uderzenie zasłynie jako</div>
+                                <img class="in-leg-ico" src="icons/flaga.svg">
+                            </div>
+                        </legend>
+                        <div class="corpus_section_form_fields_fieldset-b_container strikeName">
+                            <div class="corpus_section_form_fields_fieldset-b_container_list-cont">
+                                <label for="nazwa-uderzenia">Wpisz lub wybierz:</label>
+                                <input id="nazwa-uderzenia" list="nazwauderzenia" name="nazwauderzenia" />
+                                <datalist id="nazwauderzenia">
+                                    <option value="Niszczyciel" />
+                                    <option value="Zgniatacz Pysków" />
+                                    <option value="Czaszkozgniot" />
+                                    <option value="Ukłucie" />
+                                    <option value="Całus Skorpiona" />
+                                    <option value="Cios Niedźwiedzia" />
+                                    <option value="Rój" />
+                                    <option value="Grad" />
+                                    <option value="Chorągiew Zniszczenia" />
+                                    <option value="Zły Urok" />
+                                </datalist>
+                            </div>
+                            <div class="corpus_section_form_fields_fieldset-b_container_imag-des-cont">
+                                <div class="corpus_section_form_fields_fieldset-b_container_des-cont">
+                                    <p class="--des itsHidden">
+                                        <span class="--des_nazwa-ciosu">NAZWA</span>
+                                        <span class="--des_epitet">EPITET</span>
+                                        <span class="--des_klasa">KLASA</span>
+                                        <span class="--des_imie">IMIE</span>
+                                        <span class="--des_przydomek">PRZYDOMEK</span>
+                                        <span class="--des_zdanie">wzmacnia swój atak</span>
+                                        <span class="--des_zywiol">ZYWIOL</span>
+                                    </p>
+                                </div>
+                                <div class="corpus_section_form_fields_fieldset-b_container_imag-cont">
+                                    <div class="--helmet">
+                                        <img class="--helmet_img" src="icons/znak-ataku.svg">
+                                    </div>
+                                    <div class="--plate">
+                                        <div class="--plate_img">
+                                            <img class="--plate_img_icon">
+                                        </div>
+                                    </div>
+                                    <div class="--standart">
+                                        <div class="--standart_img_bckg">
+                                            <img>
+                                            <img>
+                                            <img>
+                                            <img>
+                                            <img>
+                                        </div>
+                                        <img class="--standart_img" src="icons/sztandar.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="corpus_section_form_field-A_btn-belt fourth">
+                            <div class="corpus_section_form_field-A_btn-belt_btn-positioner fourthSectionBtn itIsHidden">
+                                <div class="corpus_section_form_field-A_btn-belt_btn-positioner_btn">
+                                    Zatwierdzam
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <img class="corpus_section_form_ornament-marker itIsHidden" src="icons/ornament-gorny.svg">
+                <div class="corpus_section_form_field-C itIsHidden">
+                    <fieldset class="corpus_section_form_fieldset-c itIsHidden">
+                        <legend>
+                            <div class="legend-of-field">
+                                <div class="in-legend">5</div>
+                                <div class="in-leg-txt">Podstawowa obrona</div>
+                                <img class="in-leg-ico" src="icons/flaga.svg">
+                            </div>
+                        </legend>
+                        <div class="corpus_section_form_fieldset-c_flexbox-container">
+                            <div class="corpus_section_form_fieldset-c_flexbox-container_list-container">
+                                <label for="zaslona">Zasłona</label>
+                                <select id="zaslona" class="corpus_section_form_fieldset-c_select" size="4">
+                                    <option>Paweż</option>
+                                    <option>Puklerz</option>
+                                    <option>Tarcza</option>
+                                    <option>Staw czoła</option>
+                                </select>
+                            </div>
+                            <div class="corpus_section_form_fieldset-c_flexbox-container_list-container">
+                                <label for="pancerz">Pancerz</label>
+                                <select id="pancerz" class="corpus_section_form_fieldset-c_select" size="4">
+                                    <option>Amulet</option>
+                                    <option>Talizman</option>
+                                    <option>Zbroja</option>
+                                    <option>Staw czoła</option>
+                                </select>
+                            </div>
+                            <div class="corpus_section_form_fieldset-c_imgs">
+                                <div class="corpus_section_form_fieldset-c_imgs_img a itIsUnselected">
+                                    <div class="corpus_section_form_fieldset-c_imgs_img_container">
+                                        <img class="plate" src="icons/pole-obrona.svg">
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fieldset-c_imgs_img a itIsUnselected">
+                                    <div class="corpus_section_form_fieldset-c_imgs_img_container">
+                                        <img class="plate" src="icons/pole-obrona.svg">
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fieldset-c_imgs_img a itIsUnselected">
+                                    <div class="corpus_section_form_fieldset-c_imgs_img_container">
+                                        <img class="plate" src="icons/pole-obrona.svg">
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fieldset-c_imgs_img b itIsUnselected">
+                                    <div class="corpus_section_form_fieldset-c_imgs_img_container">
+                                        <img class="plate" src="icons/pole-obrona.svg">
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fieldset-c_imgs_img b itIsUnselected">
+                                    <div class="corpus_section_form_fieldset-c_imgs_img_container">
+                                        <img class="plate" src="icons/pole-obrona.svg">
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fieldset-c_imgs_img b itIsUnselected">
+                                    <div class="corpus_section_form_fieldset-c_imgs_img_container">
+                                        <img class="plate" src="icons/pole-obrona.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="corpus_section_form_field-A_btn-belt">
+                        <div class="corpus_section_form_field-A_btn-belt_btn-positioner fifthSectionBtn itIsHidden">
+                            <div class="corpus_section_form_field-A_btn-belt_btn-positioner_btn">
+                                Zatwierdzam
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="corpus_section_form_ornament-marker itIsHidden" src="icons/ornament-gorny.svg">
+                <div class="corpus_section_form_fields-2 itIsHidden">
+                    <fieldset class="corpus_section_form_fields-2_fieldset-d">
+                        <legend>
+                            <div class="legend-of-field">
+                                <div class="in-legend">6</div>
+                                <div class="in-leg-txt">Moce i Piętna</div>
+                                <img class="in-leg-ico" src="icons/flaga.svg">
+                            </div>
+                        </legend>
+                        <div class="corpus_section_form_fields-2_fieldset-d_container">
+                            <div class="corpus_section_form_fields-2_fieldset-d_container_moce">
+                                <div class="moc"></div>
+                                <div class="pietno"></div>
+                                <div class="pieczec">
+                                    <img class="pieczec" src="icons/ikona-poteg.svg">
+                                    <input type="checkbox" name="moc-pietno" id="power-weakness-checkbox" />
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields-2_fieldset-d_container_moce">
+                                <div class="moc"></div>
+                                <div class="pietno"></div>
+                                <div class="pieczec">
+                                    <img class="pieczec" src="icons/ikona-poteg.svg">
+                                    <input type="checkbox" name="moc-pietno" id="power-weakness-checkbox" />
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields-2_fieldset-d_container_moce">
+                                <div class="moc"></div>
+                                <div class="pietno"></div>
+                                <div class="pieczec">
+                                    <img class="pieczec" src="icons/ikona-poteg.svg">
+                                    <input type="checkbox" name="moc-pietno" id="power-weakness-checkbox" />
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields-2_fieldset-d_container_moce">
+                                <div class="moc"></div>
+                                <div class="pietno"></div>
+                                <div class="pieczec">
+                                    <img class="pieczec" src="icons/ikona-poteg.svg">
+                                    <input type="checkbox" name="moc-pietno" id="power-weakness-checkbox" />
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields-2_fieldset-d_container_moce">
+                                <div class="moc"></div>
+                                <div class="pietno"></div>
+                                <div class="pieczec">
+                                    <img class="pieczec" src="icons/ikona-poteg.svg">
+                                    <input type="checkbox" name="moc-pietno" id="power-weakness-checkbox" />
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields-2_fieldset-d_container_moce">
+                                <div class="moc"></div>
+                                <div class="pietno"></div>
+                                <div class="pieczec">
+                                    <img class="pieczec" src="icons/ikona-poteg.svg">
+                                    <input type="checkbox" name="moc-pietno" id="power-weakness-checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="corpus_section_form_field-A_btn-belt">
+                            <div class="corpus_section_form_field-A_btn-belt_btn-positioner sixthSectionBtn itIsHidden">
+                                <div class="corpus_section_form_field-A_btn-belt_btn-positioner_btn">
+                                    Zatwierdzam
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="corpus_section_form_fields-2_fieldset-d">
+                        <legend>
+                            <div class="legend-of-field">
+                                <div class="in-legend">7</div>
+                                <div class="in-leg-txt">Atrybuty</div>
+                                <img class="in-leg-ico" src="icons/flaga.svg">
+                            </div>
+                        </legend>
+                        <div class="corpus_section_form_fields-2_fieldset-d_container">
+                            <div class="corpus_section_form_fields-2_fieldset-d_container_atryb" id="zycie">
+                                <hr>
+                                <h4>Życie</h4>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-ogien.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt ogien">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-rozklad.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt woda">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-wod.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt zmiana">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-zmiana.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt zywia">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-zywia.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields-2_fieldset-d_container_atryb" id="madrosc">
+                                <hr>
+                                <h4>Mądrość</h4>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-ogien.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt ogien">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-rozklad.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt woda">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-wod.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt zmiana">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-zmiana.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt zywia">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-zywia.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields-2_fieldset-d_container_atryb" id="ruch">
+                                <hr>
+                                <h4>Ruch</h4>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-ogien.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt ogien">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-rozklad.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt woda">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-wod.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt zmiana">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-zmiana.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt zywia">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-zywia.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="corpus_section_form_fields-2_fieldset-d_container_atryb" id="dzialanie">
+                                <hr>
+                                <h4>Działanie</h4>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-ogien.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt ogien">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-rozklad.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt woda">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-wod.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt zmiana">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-zmiana.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                                <div class="corpus_section_form_fields-2_fieldset-d_container_belt zywia">
+                                    <div class="--belt_icon-container">
+                                        <img src="icons/zyw-zywia.svg">
+                                    </div>
+                                    <div class="--belt_body-container">
+                                        <div class="--belt_body-container_body">
+
+                                        </div>
+                                    </div>
+                                    <div class="--belt_ornament-container">
+                                        <div class="--belt_ornament-container_body"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="corpus_section_form_field-A_btn-belt">
+                            <div class="corpus_section_form_field-A_btn-belt_btn-positioner seventhSectionBtn itIsHidden">
+                                <div class="corpus_section_form_field-A_btn-belt_btn-positioner_btn">
+                                    Zatwierdzam
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <img class="corpus_section_form_ornament-marker itIsHidden" src="icons/ornament-gorny.svg">
+            </form>
+        </section>
+    </main>
+    <footer class="foot"></footer>
+</body>
+
+</html>

@@ -10,7 +10,7 @@
     header {
         width: 100%;
         @include column($fstart, $fstart);
-        .project-container_head_type{
+        .project-container_head_type {
             @include row($fstart, $center);
             padding: 0 0 0.5rem 0;
             svg {

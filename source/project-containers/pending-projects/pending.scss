@@ -1,0 +1,112 @@
+.project-container.pending-projects {
+    background-color: rgb(176, 229, 255);
+    transition: all 500ms;
+    padding: 0;
+    header {
+        padding: 0.5rem;
+        @include row ($fstart, $center);
+        .project-container_head_title {
+            color: $brandcolor;
+            margin: 0;
+        }
+    }
+    main {
+        @include column ($fstart, $fstart);
+        .project-container_main_container {
+            &.itIsFocused{
+                background-color: rgb(176, 229, 255);
+                border-top: solid 1px $brandcolor;
+            }
+            cursor: pointer;
+            user-select: none;
+            border-top: solid 1px rgb(176, 229, 255);
+            width: 100%;
+            min-height: 60px;
+            @include row (space-between, $center);
+            padding: 0 0 0.5rem 0;
+            background-color: $backcolor;
+            padding: 0;
+            flex-wrap: wrap;
+            @media only screen and (max-width: 220mm) {
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+            }
+            .project-container_main_container_left-side {
+                @include row ($fstart, $center);
+                color: $brandcolor;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: bold;
+                font-family: sans-serif;
+                font-size: 1rem;
+                padding: 0 0 0 1rem;
+                @media only screen and (max-width: 220mm) {
+                    width: 100%;
+                }
+            }
+            .project-container_main_container_right-side {
+                @include row ($fend, $center);
+                font-size: 1rem;
+                svg {
+                    width: 25px;
+                    height: 25px;
+                    margin: 0 0.5rem 0 0;
+                }
+                h2 {
+                    text-transform: capitalize;
+                    font-family: sans-serif;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    margin: 0;
+                    padding: 0;
+                    color: $cssdot;
+                }
+                @media only screen and (max-width: 220mm) {
+                    width: 100%;
+                    @include row ($fstart, $center);
+                    padding-left: 1rem;
+                }
+            }
+            &:hover {
+                background-color: rgb(176, 229, 255);
+                border-top: solid 1px rgb(176, 229, 255);
+            }
+        }
+        .project-container_main_container_bottom-side {
+            width: 100%;
+            max-height: 0;
+            transition: all 500ms ease;
+            &.itIsClicked {
+                max-height: 1000px;
+            }
+            overflow: hidden;
+            background-color: $backcolor;
+            @include row ($center, $center);
+            flex-wrap: wrap;
+            p {
+                width: 100%;
+                text-align: center;
+                color: $brandgray;
+                letter-spacing: 1px;
+                font-family: sans-serif;
+            }
+            .project-container_main_container_bottom-side_btn {
+                width: 40%;
+                background-color: rgb(226, 242, 250);
+                border-top: solid 1px rgb(176, 229, 255);
+                padding: 1rem 0;
+                color: $brandcolor;
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+                font-family: sans-serif;
+                @include row ($center, $center);
+                 cursor: pointer;
+                 user-select: none;
+                &:hover {
+                    background-color: rgb(176, 229, 255);
+                    border-top: rgb(226, 242, 250);
+                }
+            }
+        }
+    }
+}

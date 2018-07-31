@@ -14,6 +14,8 @@ import './right-column/right-column_main-style.scss';
 //project-container
 import './project-containers/project-containers_main-style.scss';
 import './project-containers/converters-container/converters-container.scss';
+import './project-containers/pending-projects/pending.scss';
+import './project-containers/pending-projects/pending.js';
 import './project-containers/converters-container/converters-containers.js';
 import './project-containers/keyframes-container/keyframes-container.scss';
 import './project-containers/keyframes-container/keyframes-container.js';
@@ -31,6 +33,7 @@ import './footer/footer.scss';
 'use strict';
 document.addEventListener('DOMContentLoaded', function () {
     preventJumpingBackgroundInIe();
+    seeNewProj();
 });
 
 function preventJumpingBackgroundInIe() {
@@ -42,5 +45,27 @@ function preventJumpingBackgroundInIe() {
             var currentScrollPosition = window.pageYOffset;
             window.scrollTo(0, currentScrollPosition - wheelDelta);
         });
+    }
+}
+
+function seeNewProj() {
+    let btn = document.querySelector('#go-see-new');
+    btn.addEventListener('click', scrollToNewPro);
+
+    function scrollToNewPro() {
+
+        let newPro = document.querySelector('.project-container.pending-projects');
+        let scrollToThis = newPro.offsetTop;
+        var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
+        if (isSmoothScrollSupported === true) {
+            window.scrollTo({
+                'behavior': 'smooth',
+                'left': 0,
+                'top': scrollToThis
+            });
+        } else {
+            window.scrollTo(0, scrollToThis);
+        }
+
     }
 }

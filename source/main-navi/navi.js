@@ -8,7 +8,7 @@ function mainNavigationInitialize(){
     let ulist = document.querySelector('.main-nav ul');
     toggleBtn.addEventListener('click', function(){
         ulist.classList.toggle('isActive');
-    })
+    });
 }
 function scrollingEngine(){
     let btnCvEng=document.querySelector('#cv-eng');
